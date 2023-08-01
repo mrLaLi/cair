@@ -1,0 +1,67 @@
+<div class="verification account row">
+  <div class="small-12 column">
+
+    <%= back_link_to account_path, t("verification.back") %>
+
+    <h1><%=t("account.update_data")%></h1>
+    <h3><%= t("account.restore_data")%></h3>
+    
+    <%= form_for @update, as: "update", url: updatedata_path do |f| %>
+        <%= render "errors" %>
+        <div class="row">
+          <div class="small-12 medium-8">
+            <div class="small-12 medium-3 column">
+            <%= f.label t("verification.residence.new.type") %>
+            <%= f.select :document_type, document_types, prompt: "", label: false %>
+            </div>
+            <div class="small-12 medium-5 column end">
+
+            <div class="inline-block">
+              <%= f.label t("verification.residence.new.document_number") %>
+            </div>
+
+            
+            <div class="dropdown-pane" id="info-document-number" data-dropdown
+                data-hover="true" data-hover-pane="true">
+            
+            </div>
+
+            <%= f.text_field :document_number, label: false %>
+            </div>
+          </div>
+        </div>
+
+        <div class="date-of-birth small-12 medium-6 clear">
+        <%= f.label t("verification.residence.new.date_of_birth") %>
+        <%= f.date_select :date_of_birth,
+                          prompt: true,
+                          start_year: 1900, end_year: minimum_required_age.years.ago.year, label: false %>
+        </div>
+
+        <div class="small-12 medium-5 clear">
+          <%= f.label t("verification.residence.new.postal_code") %>
+          <%= f.text_field :postal_code, label:false %>
+        </div>
+        <div class="small-12 medium-6">
+          <%= f.file_field :image,
+            label: t("verification.residence.new.dokumenti")%>
+        </div>
+        <div class="small-12">
+          <%= f.check_box :terms_of_service,
+            title: t("verification.residence.new.accept_terms_text_title"),
+            label: t("verification.residence.new.accept_terms_text",
+                    terms_url: link_to(t("verification.residence.new.terms"), page_path("census_terms"),
+                                        title: t("shared.target_blank"),
+                                        target: "_blank")
+                    ) %>
+        </div>
+
+        <div class="small-12updatedata_new_path medium-3 clear">
+          <%= f.submit t("account.save_changes"),
+                      id: "new_residence_submit",
+                      class: "button success expanded" %>
+        </div>
+        
+    <% end %>
+  </div>
+</div>

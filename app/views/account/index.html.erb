@@ -1,0 +1,31 @@
+<%= back_link_to account_path, t("verification.back") %> <br>
+<section class="account-info">
+    
+    <%= link_to t("account.update_data"), updatedata_new_path, class: "float-right btchange-user button hollow" %>
+                
+        <p>
+            <%= t("management.account_info.username_label") %>
+            <strong><%= @account.username %></strong>
+        </p>
+        <p>
+          <%= t("management.account_info.email_label") %>
+          <strong><%= @account.email %></strong>
+        </p>
+        <p>
+            <% if @account.document_type.present?%>
+            <%= t("management.account_info.document_type_label") %>
+            <strong><%= humanize_document_type(@account.document_type) %></strong>
+            <%end%>
+        </p>
+        <p>
+          <% if @account.document_number.present?%>
+            <%= t("management.account_info.document_number_label") %>
+            <strong><%= @account.document_number %></strong>
+            <%end%>
+        </p>
+        <p>
+        <% if @account.image.present? %>
+           <%= image_tag @account.image, width: "550px"%>
+        <%end%>
+        </p>
+</section>

@@ -1,0 +1,202 @@
+sq:
+  settings:
+    hot_score_period_in_days: Periudha (ditët) e përdorur nga opsioni 'më aktivet'
+    hot_score_period_in_days_description: Opsioni 'më aktivet' i përdorur në shumë seksione do të bazohet në votat përgjatë X ditëve.
+    featured_proposals_number: Numri i propozimeve të veçuara
+    featured_proposals_number_description: Numri i propozimeve që do të shfaqen si të veçuara, nëse opcioni propozimet e veçuara është aktiv.
+    postal_codes: Kodet postare
+    postal_codes_description: 'Një listë e ndarë me presje të kodeve postare të vlefshme, ju gjithashtu mund të listoni vargjet me dy pika. Shembull: 00001:00010,00024,AB345FG,00031:00035 do të lejojë kodet postare midis 00001 dhe 00010, kodin postar 00024, kodin postar AB3 45FG dhe kodet postare midis 00031 dhe 00031.
+      Nëse e lini bosh, të gjithë kodet postare do të jenë të vlefshme.'
+    comments_body_max_length: "Gjatësia maksimale e komenteve"
+    comments_body_max_length_description: "Në numrin e karaktereve"
+    official_level_1_name: "Zyrtar publik i nivelit 1"
+    official_level_1_name_description: "Etiketa që do të shfaqet në përdoruesit e shënuar si pozicioni zyrtar i Nivelit 1"
+    official_level_2_name: "Zyrtar publik i nivelit 2"
+    official_level_2_name_description: "Etiketa që do të shfaqet në përdoruesit e shënuar si pozicioni zyrtar i Nivelit 2"
+    official_level_3_name: "Zyrtar publik i nivelit 3"
+    official_level_3_name_description: "Etiketa që do të shfaqet në përdoruesit e shënuar si pozicioni zyrtar i Nivelit 3"
+    official_level_4_name: "Zyrtar publik i nivelit 4"
+    official_level_4_name_description: "Etiketa që do të shfaqet në përdoruesit e shënuar si pozicioni zyrtar i Nivelit 4"
+    official_level_5_name: "Zyrtar publik i nivelit 5"
+    official_level_5_name_description: "Etiketa që do të shfaqet në përdoruesit e shënuar si pozicioni zyrtar i Nivelit 5"
+    max_ratio_anon_votes_on_debates: "Raporti maksimal i votave anonime për Debat"
+    max_ratio_anon_votes_on_debates_description: "Votat anonime janë nga përdoruesit e regjistruar me një llogari të paverifikuar"
+    max_votes_for_proposal_edit: "Numri i votave nga të cilat një Propozim nuk mund të përpunohet"
+    max_votes_for_proposal_edit_description: "Nga ky numër suportesh, autori i një Propozimi nuk mund ta reduktojë më"
+    max_votes_for_debate_edit: "Numri i votave nga të cilat një Debat nuk mund të përpunohet"
+    max_votes_for_debate_edit_description: "Nga ky numër votash, autori i një Debati nuk mund ta reduktojë më"
+    proposal_code_prefix: "Prefixi për kodet e Propozimit"
+    proposal_code_prefix_description: "Ky prefiks do të shfaqet në Propozimet para datës së krijimit dhe ID-së së saj"
+    votes_for_proposal_success: "Numri i votave të nevojshme për miratimin e një Propozimi"
+    votes_for_proposal_success_description: "Kur një propozim arrin këtë numër të mbështetësve, ai nuk do të jetë më në gjendje të marrë më shumë mbështetje dhe konsiderohet i suksesshëm"
+    months_to_archive_proposals: "Muajt për të arkivuar Propozimet"
+    months_to_archive_proposals_description: "Pas këtij numri të muajve, Propozimet do të arkivohen dhe nuk do të jenë më në gjendje të marrin mbështetje"
+    email_domain_for_officials: "Domaini i emailit për zyrtarët publikë"
+    email_domain_for_officials_description: "Të gjithë përdoruesit e regjistruar me këtë domain do të kenë llogarinë e tyre të verifikuar gjatë regjistrimit"
+    twitter_handle: "Twitter handle"
+    twitter_handle_description: "Nëse plotësohet ajo do të shfaqet në fund të faqes"
+    twitter_hashtag: "Hashtagu Twitter-it"
+    twitter_hashtag_description: "Hashtag që do të shfaqet kur shpërndan përmbajtje në Twitter"
+    facebook_handle: "Facebook handle"
+    facebook_handle_description: "Nëse plotësohet ajo do të shfaqet në fund të faqes"
+    youtube_handle: "Youtube handle"
+    youtube_handle_description: "Nëse plotësohet ajo do të shfaqet në fund të faqes"
+    telegram_handle: "Telegram handle"
+    telegram_handle_description: "Nëse plotësohet ajo do të shfaqet në fund të faqes"
+    instagram_handle: "Instagram handle"
+    instagram_handle_description: "Nëse plotësohet ajo do të shfaqet në fund të faqes"
+    url: "URL kryesore"
+    url_description: "URL-ja kryesore e faqes suaj të internetit"
+    org_name: "Organizatë"
+    org_name_description: "Emri i organizatës"
+    related_content_score_threshold: "Pragu i vlerësimit të përmbajtjes përkatëse"
+    related_content_score_threshold_description: "Fsheh përmbajtjen që përdoruesit e shënojnë si të palidhur"
+    mailer_from_name: "Emri i dërguesit të emailit"
+    mailer_from_name_description: "Ky emër do të shfaqet në emailet e dërguara nga aplikacioni"
+    mailer_from_address: "Adresa e emailit e dërguesit"
+    mailer_from_address_description: "Kjo adres emaili do të shfaqet në emailet e dërguara nga aplikacioni"
+    meta_title: "Titulli i faqes (SEO)"
+    meta_title_description: "Titulli per faqen<title>, përdoret për të përmirësuar SEO"
+    meta_description: "Përshkrimi i faqes (SEO)\n"
+    meta_description_description: 'Përshkrimi i faqes <meta name="description">, përdoret për të përmirësuar SEO'
+    meta_keywords: "\nFjalë kyçe (SEO)"
+    meta_keywords_description: "\nFjalë kyçe <meta name=\"keywords\">,përdoret për të përmirësuar SEO"
+    min_age_to_participate: Mosha minimale e nevojshme për të marrë pjesë
+    min_age_to_participate_description: "Përdoruesit e kësaj moshe mund të marrin pjesë në të gjitha proceset"
+    proposals:
+      successful_proposal_id: Propozim i suksesshëm
+      successful_proposal_id_description: Ky propozim përdoret si referencë për një propozim të suksesshëm në numrin mbështetës dhe do të shfaqet në grafikun e panelit.
+      poll_short_title: Sondazhet
+      poll_short_title_description: Përshkrim i shkurtër i opsionit së sondazhit. Lejon përdoruesit të krijojnë sondazhe për një propozim.
+      poll_description: Përshkrimi i sondazheve
+      poll_description_description: Përshkrimi i detajuar i opsionit së sondazhit
+      poll_link: Linku për informacion shtese
+      poll_link_description: Shtoni informacion shtesë
+      email_short_title_description: Përshkrim i shkurtër i opsionit të emailit. Lejon përdoruesit të dërgojnë një email për të promovuar propozimin e tyre. Të gjithë përmbajtjen e këtij emaili mund ta gjeni në "/app/views/dashboard/mailer/forward.html.erb"
+      email_description: Përshkrim i emailit
+      email_description_description: Përshkrimi i detajuar i opsionit së emailit
+      email_short_title: Email
+      poster_description: Përshkrim i posterit
+      poster_description_description: Përshkrimi i detajuar i opsionit së posterit
+      poster_short_title: Poster
+      poster_short_title_description: Përshkrim i shkurtër i opsionit të posterit. Lejon përdoruesit të shkarkojnë një poster në PDF që të promovojnë propozimin. Mund ti gjeni të gjithë posterat në  "/app/views/dashboard/poster/index.pdf.erb"
+    proposal_notification_minimum_interval_in_days: Intervali minimal (në ditë) për autorët e propozimeve për të dërguar njoftime për propozime të reja
+    proposal_notification_minimum_interval_in_days_description: Numri i ditëve që përdoruesi mund të dërgojë një njoftim për të gjithë ndjekësit për propozimin e tyre
+    direct_message_max_per_day: Numri maksimal i mesazheve direkte në ditë
+    direct_message_max_per_day_description: Numri maksimal i mesazheve direkte që një përdorues mund të dërgojë në ditë
+    analytics_url: "URL e analitikës"
+    feature:
+      valuation_comment_notification: Njofitimi për komentin vlerësues
+      valuation_comment_notification_description: Dërgoni një email për të gjithë përdoruesit e 
+        lidhur përveç komentuesit të vlerësimit për investimin buxhetor kur krijohet një koment i ri vlerësimi
+      remote_census: Konfiguro lidhjen për regjistrimin në distancë (SOAP)
+      remote_census_description: Lejon konfigurimin e lidhjes për regjistrimin 
+        në distancë të çdo institucioni
+      translation_interface: Ndërfaqja e përkthimit
+      remote_translations_description: Shfaq një buton që i lejon përdoruesit të kërkojnë një përkthim kur nuk ka përmbajtje në gjuhën e tyre.
+      remote_translations: Remote translation
+      translation_interface_description: Shfaq ndërfaqen e përkthimit manual që lejon përdoruesit të futin përmbajtjen e tyre në të gjitha gjuhët e opsionale të aplikacionit.
+        Ky opsion prek vetëm format e aplikimit të përdoruesve dhe në mënyrë të pavarur do të jetë gjithmonë aktiv në panelin e administrimit.
+      machine_learning_description: Aktivizo the AI / Machine Learning seksionin për të
+        ekzekutuar skriptat python dhe për të pasuruar përmbajtjen automatikisht.
+      wordpress_login: "\nIdentifikohu në Wordpress"
+      wordpress_login_description: Lejo përdoruesit të regjistrohen me llogarinë e tyre në Wordpress
+      twitter_login: "\nIdentifikohu në Twitter"
+      twitter_login_description: "\nLejo përdoruesit të regjistrohen me llogarinë e tyre në Twitter"
+      facebook_login: "Identifikohu në Facebook"
+      facebook_login_description: "\nLejo përdoruesit të regjistrohen me llogarinë e tyre në Facebook"
+      google_login: "Identifikohu në Google"
+      google_login_description: "\nLejo përdoruesit të regjistrohen me llogarinë e tyre në Google"
+      featured_proposals: "Propozimet e veçuara"
+      featured_proposals_description: "Shafaqën propozimet e veçuara në faqen kryesore të propozimeve"
+      signature_sheets: "Nënshkrimi i fletëve"
+      signature_sheets_description: "Kjo lejon shtimin e nënshkrimit të paneleve të Administratës të mbledhura në vend të Propozimeve dhe projekteve të investimeve të buxheteve me pjesëmarrje"
+      dashboard:
+        notification_emails: Paneli i email-ave njoftues
+        notification_emails_description: Aktivizo panelin e dërgimit të email-eve njoftuese tek autorët e propozimit.
+      remove_investments_supports: Lejoni heqjen e mbështetjeve për investimet buxhetore
+      remove_investments_supports_description: Lejoni përdoruesit të heqin mbështetjen për investimet e buxhetimit me pjesëmarrje gjatë fazës së përzgjedhjes së projekteve.
+      sdg: SDG
+      sdg_description: Aktivizo seksionet SDG në menynë e administratorit dhe në parametrat globale.
+      user:
+        recommendations: "Rekomandimet"
+        recommendations_description: "Tregon rekomandimet e përdoruesve në faqen kryesore bazuar në etiketat e artikujve në vijim"
+        skip_verification: "Tejkalo verifikimin e përdoruesit"
+        skip_verification_description: "Kjo do të çaktivizojë verifikimin e përdoruesit dhe të gjithë përdoruesit e regjistruar do të jenë në gjendje të marrin pjesë në të gjitha proceset"
+        recommendations_on_debates: "Rekomandime për debatet"
+        recommendations_on_debates_description: "Shfaq rekomandimet e përdoruesve për përdoruesit në faqen e debateve bazuar në etiketat e artikujve të ndjekur"
+        recommendations_on_proposals: "Rekomandime për debatet"
+        recommendations_on_proposals_description: "Shfaq rekomandimet për përdoruesit në faqen e propozimeve bazuar në etiketat e artikujve të ndjekur"
+      community: "Komuniteti mbi propozimet dhe investimet"
+      community_description: "Mundëson seksionet e komunitetit në propozimet dhe projektet e investimeve të buxheteve me pjesëmarrje"
+      map: "Vendodhja gjeografike e Propozimeve dhe investimeve të buxhetit "
+      map_description: "Aktivizon vendodhjen gjeografike të propozimeve dhe projekteve të investimeve"
+      allow_images: "Lejoni ngarkimin dhe shfaqni imazhe"
+      allow_images_description: "Lejon përdoruesit të ngarkojnë imazhe kur krijojnë propozime dhe projekte investimi për buxhetim me pjesëmarrje"
+      allow_attached_documents: "Lejoni ngarkimin dhe shfaqjen e dokumenteve të bashkangjitura"
+      allow_attached_documents_description: "Lejon përdoruesit të ngarkojnë dokumente kur krijojnë propozime dhe projekte investimi për buxhetim me pjesëmarrje "
+      guides: "Udhëzues për të krijuar propozime ose projekte investimi"
+      guides_description: "Tregon një udhëzues për dallimet ndërmjet propozimeve dhe projekteve të investimeve nëse është aktiv një buxhet me pjesëmarrje"
+      public_stats: "Statistikat publike"
+      public_stats_description: "Shfaqni statistikat publike në panelin e Administratës"
+      help_page: "Faqja ndihmëse"
+      help_page_description: 'Shfaq një meny Ndihmë që përmban një faqe me një seksion informacioni rreth secilës janë të akitivizuar vecoritë'
+    map:
+      latitude: "Gjerësia gjeografike"
+      latitude_description: "\nGjerësia gjeografike për të treguar pozicionin e hartës"
+      longitude: "Gjatësia gjeografike"
+      longitude_description: "Gjatësia gjeografike për të treguar pozicionin e hartës"
+      zoom: "Zmadhoje"
+      zoom_description: "Zmadho për të treguar pozicionin e hartës"
+    uploads:
+      images:
+        min_width: Gjëresia minimale e fotografisë 
+        min_width_description: Gjërësia minimale e lejuar për një fotografi të ngarkuar (in pixels)
+        min_height: Gjatësia minimale e fotografisë 
+        min_height_description: Gjatësia minimale e lejuar për një fotografi të ngarkuar (in pixels)
+        max_size:  Madhësia maksimale e fotografisë 
+        max_size_description: Madhësia maksimale e lejuar për një fotografi të ngarkuar (in Megabytes/MB)
+        content_types: Llojet e pranuara të përmbajtjes për fotografitë 
+        content_types_description: Zgjidhni të gjitha llojet e përmbajtjes së lejuar për fotografitë e ngarkuara 
+        title:
+          min_length: Gjatësia minimale e titullit të fotografisë 
+          min_length_description: Titulli i ofruar nga përdoruesi kur ngarkohet një fotografi 
+            (used as alt HTML attribute) 
+          max_length:  Gjatësia maksimale e titullit të fotografisë 
+          max_length_description: Titulli i ofruar nga përdoruesi kur ngarkohet një fotografi Title provided by the user when uploading an image
+            (used as alt HTML attribute)
+      documents:
+        max_amount: Numri maksimal i dokumentave 
+        Max_amount_description: Madhësia maksimale e numrit të dokumentave që mund të bashkangjiten te një propozim, investim…
+          a proposal, investment...
+        max_size: Madhësia maksimale e dokumentit
+        max_size_description: Madhësia maksimale e lejuar për një dokument të ngarkuar (in Megabytes/MB)
+        content_types: Llojet e pranuara të përmbajtjes për dokumenta 
+        content_types_description: Zgjidhni të gjitha llojet e përmbajtjes të lejuara për dokumentet e ngarkuara
+      sdg:
+      process:
+        debates: SDG-të e lidhura me debatet
+        debates_description: Lejoni që debatet të lidhen me Sustainable Development
+          Goals
+        proposals:  SDG-të e lidhura me propozimet
+        proposals_description: Lejoni që propozimet të lidhen me Sustainable Development
+          Goals
+        polls: SDG-të e lidhura me sondazhet
+        polls_description: Lejoni që sondazhet të lidhen me Sustainable Development Goals
+        budgets: SDG-të e lidhura në buxhetet pjesëmarrëse
+        budgets_description: Lejoni që buxhetet pjesëmarrëse të lidhen me SDG 
+        legislation: SDG-të e lidhura në legjislacionin bashkëpunues
+        legislation_description: Lejoni që legjislacioni bashkëpunues t'iu lidh me SDG 
+    process:
+      debates: "Debate"
+      debates_description: "Hapësira e debatit të qytetarëve mundëson që ata të mund të paraqesin çështje që i prekin  dhe për të cilën ata duan të ndajnë pikëpamjet e tyre me të tjerët"
+      proposals: "Propozime"
+      polls: "Sondazhet"
+      polls_description: "Sondazhet e qytetarëve janë një mekanizëm pjesëmarrës përmes të cilit qytetarët me të drejtë vote mund të marrin vendime të drejtpërdrejta."
+      budgets: "Buxhetimi me pjesëmarrje"
+      legislation: "Legjislacioni Bashkëpunues"
+    html:
+      per_page_code_head: "Kodi duhet të përfshihet në çdo faqe (<head>)"
+      per_page_code_head_description: "Ky kod do të shfaqet brenda etiketës<head>. E dobishme për të hyrë në skriptet e personalizuara, analitika ..."
+      per_page_code_body: "Kodi duhet të përfshihet në çdo faqe (<body>)"
+      per_page_code_body_description: "Ky kod do të shfaqet brenda etiketës<body>. E dobishme për të hyrë në skriptet e personalizuara, analitika ..."

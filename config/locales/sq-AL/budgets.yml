@@ -1,0 +1,210 @@
+sq:
+  budgets:
+    ballots:
+      show:
+        amount_available:
+          approval:
+            zero:  Ju mund të hidhni ende edhe <span>%{count}</span> vota.
+            one: Ju mund të hidhni ende edhe <span>%{count}</span> votë.
+            other: Ju mund të hidhni ende edhe <span>%{count}</span> vota.
+          knapsack: "Ende në dispozicion për ju <span>%{count}</span>"
+        remove_label: Hiq votën për %{investment}
+        title: Votimi juaj
+        amount_spent:
+          knapsack: "Shuma e shpenzuar <span>%{count}</span>"
+          approval:
+        amount_limit:
+          knapsack: "Shuma totale <span>%{count}</span>"
+          approval:
+        no_balloted_group_yet: "Ju nuk keni votuar ende për këtë grup, shkoni të votoni!"
+        remove: Hiq voten
+        voted_info: Fleta juaj e votimit është konfirmuar!
+        voted_info_2: Por ju mund ta ndryshoni votën tuaj në çdo kohë derisa kjo fazë të mbyllet.
+        voted:
+          one: "Ju keni votuar <span>një</span> investim"
+          other: "Ju keni votuar <span>%{count}</span> investimet."
+        zero: Ju nuk keni votuar në asnjë projekt investimi.
+      reasons_for_not_balloting:
+        not_enough_available_votes: Ju keni arritur numrin maksimal të votave që lejohen.
+        casted_offline: Ju tashme keni marrë pjesë offline.
+        not_verified: Vetëm përdoruesit e verifikuar mund të votojnë për investimet; %{verify_account}.
+        not_selected: Projektet e investimeve të pazgjedhura nuk mund të mbështeten.
+        not_enough_money: "Ju tashmë keni caktuar buxhetin në dispozicion. <small> Mos harroni që ju mund të %{change_ballot} në cdo kohë </small>"
+        no_ballots_allowed: Faza e zgjedhjes është e mbyllur
+        different_heading_assigned: "Ju keni votuar tashmë një titull tjetër: %{heading_link}"
+        change_ballot: Ndryshoni votat tuaja
+    groups:
+      show:
+        title: Zgjidh një opsion
+    phase:
+      drafting: Draft (jo i dukshëm për publikun)
+      informing: Informata
+      accepting: Pranimi i projekteve
+      reviewing: Shqyrtimi i projekteve
+      selecting: Përzgjedhja e projekteve
+      valuating: Vlerësimi i projekteve
+      publishing_prices: Publikimi i kostove të projekteve
+      balloting: Votimi i projekteve
+      reviewing_ballots: Shqyrtimi i votimit
+      finished: Përfundimi i buxhetit
+    index:
+      title: Buxhetimi me pjesëmarrje
+      empty_budgets: Nuk ka buxhet.
+      section_header:
+        icon_alt: Ikona e buxhetit me pjesëmarrje
+        title: Buxhetimi me pjesëmarrje
+        help: Ndihmë për buxhetimin me pjesëmarrje
+      all_phases: Fazat e investimeve buxhetore
+      next_phase: Faza e ardhshme
+      prev_phase: Faza paraprake
+      current_phase: Faza e tanishme
+      map: Propozimet e investimeve buxhetore të shënuara gjeografikisht
+      finished_budgets: Buxhetet me pjesëmarrje të përfunduara
+      see_results: Shiko rezultatet
+      section_footer:
+        title: Ndihmë për buxhetimin me pjesëmarrje
+        description: Me buxhetimin me pjesëmarrje qytetarët vendosin se në cilat projekte do të destinohen një pjesë e mjeteve nga buxheti.
+      milestones: Pikëarritje
+    investments:
+      form:
+        title: "Krijo një investim buxhetor"
+        tag_category_label: "Kategoritë"
+        tags_instructions: "Etiketoni këtë propozim. Ju mund të zgjidhni nga kategoritë e propozuara ose të shtoni tuajën"
+        tags_label: Etiketë
+        tags_placeholder: "Futni etiketimet që dëshironi të përdorni, të ndara me presje (',')"
+        map_location: "Vendndodhja në hartë"
+        map_location_instructions: "Lëvizni në hartë dhe vendosni shënuesin."
+        map_remove_marker: "Hiq shënuesin e hartës"
+      index:
+        title: Buxhetimi me pjesëmarrje
+        unfeasible: Investimet e parealizueshme
+        unfeasible_text: "Investimet duhet të plotësojnë një numër kriteresh (ligjshmëria, konkretizimi, përgjegjësia e qytetit, mos tejkalimi i limitit të buxhetit) që të shpallen të qëndrueshme dhe të arrijnë në fazën e votimit përfundimtar. Të gjitha investimet që nuk i plotësojnë këto kritere janë shënuar si të papërfillshme dhe publikohen në listën e mëposhtme, së bashku me raportin e tij të papërshtatshmërisë."
+        by_heading: "Projektet për investime me shtrirje: %{heading}"
+        search_form:
+          button: Kërko
+          placeholder: Kërkoni projekte investimi ...
+          title: Kërko
+        sidebar:
+          my_ballot: Votimi im
+          voted_info:
+              one: "<strong>Ke votuar një propozim me një kosto prej%{amount_spent}</strong>"
+              other: "<strong>Ke votuar %{count} propozime me një kosto prej %{amount_spent}</strong>"
+          change_vote_info:
+            knapsack: "Ju mund të %{link} në çdo kohë deri më %{phase_end_date}. Nuk është e nevojshme të shpenzoni të gjitha fondet në dispozicion."
+            approval: "Ju mund të %{link} në çdo kohë deri më %{phase_end_date}."
+          change_vote_link: "Ndryshoni votat tuaja"
+          different_heading_assigned: "Ju keni votuar tashmë një titull tjetër: %{heading_link}"
+          change_ballot: "Nëse ndryshoni mendjen tuaj, ju mund të hiqni votat tuaja në %{check_ballot} dhe të filloni përsëri."
+          check_ballot_link: "Kontrolloni votimin tim"
+          zero: Ju nuk keni votuar në asnjë projekt investimi në këtë grup
+          verified_only: "Për të krijuar një investim të ri buxhetor %{verify}"
+          create: "Krijo një investim buxhetor"
+          not_logged_in: "Për të krijuar një investim të ri buxhetor ju duhet të Kyçeni ose të Regjistroheni."
+        filter: "Klasifikimi i projekteve sipas"
+        filters:
+          selected: "Të zgjedhura"
+          unfeasible: "Parealizueshme"
+          winners: "Fituesit"
+          unselected: "Nuk janë zgjedhur për votimin final"
+          not_unfeasible: "Aktive"
+        orders:
+          random: "\ntë rastësishme\n"
+          confidence_score: më të vlerësuarat
+          price: nga çmimi
+      share:
+        message: "Kam krijuar projektin e investimeve%{title} në %{handle}. Krijoni një projekt investimi edhe ju!"
+      show:
+        author_deleted: Përdoruesi u fshi
+        price_explanation: Shpjegimi i çmimit
+        unfeasibility_explanation: Shpjegim i parealizuar
+        code: "Kodi i projektit për investim: <strong>%{code}</strong>"
+        location: "Vendodhja:<strong>%{location}</strong>"
+        organization_name: "Propozuar në emër të: <strong>%{name}</strong>"
+        share: Shpërndaj
+        title: Projekt investimi
+        supports: Mbështet
+        votes: Votim
+        price: Çmim
+        comments_tab: Komentet
+        milestones_tab: Pikëarritje
+        author: Autor
+        project_unfeasible: "Ky projekt investimi <strong> është shënuar si jo e realizueshme </strong> dhe nuk do të shkojë në fazën e votimit."
+        project_selected: "Ky projekt investimi <strong> është përzgjedhur</strong>  për fazën e votimit."
+        project_winner: "Projekti fitues i investimeve"
+        project_not_selected: "Ky projekt investimi <strong>  nuk eshte selektuar </strong> për fazën e votimit."
+      wrong_price_format: Vetëm numra të plotë
+      investment:
+        add: Voto
+        already_added: Ju e keni shtuar tashmë këtë projekt investimi
+        support_title: Mbështetni këtë projekt
+        supports:
+          zero: Asnjë mbështetje
+          one: 1  mbështetje
+          other: "1%{count} mbështetje"
+      header:
+        check_ballot: "Kontrolloni votimin tim"
+        different_heading_assigned: "Ju keni votuar tashmë një titull tjetër: %{heading_link}"
+        change_ballot: "Nëse ndryshoni mendjen tuaj, ju mund të hiqni votat tuaja në %{check_ballot} dhe të filloni përsëri."
+        check_ballot_link: "Kontrolloni votimin tim"
+        price: "Buxheti total"
+      votes:
+        remove_support: "Hiqni mbështetjen tuaj" 
+        already_supported: "Ju e keni mbështetur tashmë këtë projekt investimi. Shperndaje!"
+        confirm_group:
+          one: "Ju mund të mbështesni vetëm investimet në %{count} rreth .Nëse vazhdoni ju nuk mund të ndryshoni zgjedhjen e rrethit tuaj. A je i sigurt?"
+          other: "Ju mund të mbështesni vetëm investimet në %{count} rrethe .Nëse vazhdoni ju nuk mund të ndryshoni zgjedhjen e rrethit tuaj. A je i sigurt?"
+        support: "Mbështet"
+    investments_list:
+      investment:
+        price: "Çmim"
+        read_more: "Lexo më tepër"
+        supports: "Mbështet"
+      see_all: "Shih të gjitha investimet"
+      title: "Lista e investimeve"
+    show:
+      see_results: Shiko rezultatet
+    supports_info: 
+      different: "Ju mund të mbështesni projekte të ndryshme aq sa dëshironi."
+      next: "Mbështetni projektet që dëshironi ti kaloni në fazën tjetër."
+      scrolling: "Lëvizni poshtë për të parë të gjitha idetë"
+      share: "Ju mund të shpërndani projektet që keni mbështetur në rrjetet social që të tërhiqni më shumë vëmendje dh të fitoni më shumë mbështetje!"
+      supported:
+        one: "Deri më tani ju keni mbështetur <strong>1 projekt</strong>."
+        other: "Deri më tani ju keni mbështetur <strong>%{count} projekte</strong>."
+      supported_not_logged_in: "Kyçeni që të filloni <strong>të mbështetni projektet</strong>."
+      time: "Ka ende kohë deri në %{phase_end_date} për të mbështetur projektet."
+      title: "Është koha për të <strong>mbështetur</strong> projektet!"
+    results:
+      link: Rezultatet
+      page_title: "%{budget}- Rezultatet"
+      heading: "Rezultatet e buxhetit pjesëmarrjës"
+      heading_selection_title: "Nga rrethi"
+      ballot_lines_count: Votim
+      hide_discarded_link: Hiq të fshehurat
+      show_all_link: Shfaqi të gjitha
+      price: Çmim
+      amount_available: Buxheti në dispozicion
+      accepted: "Propozimi i pranuar i shpenzimeve:"
+      discarded: "Propozimi i hedhur poshtë i shpenzimeve:"
+      incompatibles: I papajtueshëm
+      investment_proyects: Lista e të gjitha projekteve të investimeve 
+      unfeasible_investment_proyects: Lista e të gjitha projekteve të investimeve të papranueshme
+      not_selected_investment_proyects: Lista e të gjitha projekteve të investimeve të pa zgjedhur për votim
+      investment_title: Titulli projektit.
+    executions:
+      link: "Pikëarritje"
+      page_title: "%{budget}- Pikëarritje"
+      heading: "Buxhetimi me pjesëmarrje i Pikës së arritjes"
+      heading_selection_title: "Nga rrethi"
+      no_winner_investments: "Asnjë investim fitues në këtë gjendje"
+      filters:
+        status:
+          label: "Gjendja aktuale e projektit"
+          all: "Të gjitha (%{count})"
+        milestone_tag:
+          all: "Të gjitha (%{count})"
+    phases:
+      errors:
+        dates_range_invalid: "Data e fillimit nuk mund të jetë e barabartë ose më vonë se data e përfundimit"
+        prev_phase_dates_invalid: "Data e fillimit duhet të jetë më e vonshme se data e fillimit të fazës së aktivizuar më parë (%{phase_name})"
+        next_phase_dates_invalid: "Data e përfundimit duhet të jetë më e hershme se data përfundimtare e fazës tjetër të aktivizuar (%{phase_name})"

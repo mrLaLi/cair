@@ -1,0 +1,21 @@
+Requirements:
+
+php, php-cli, and php-soap (through apt-get install)
+zeep (through python3 -m pip install)
+
+
+Start the PHP Soap Server (in the local folder)
+
+$ php -S "localhost:12312"
+
+You should get something like:
+
+"[Wed Nov  9 17:52:27 2022] PHP 8.1.2-1ubuntu2.8 Development Server (http://localhost:12312) started"
+
+Open another terminal and run
+
+$ python3 client.py
+
+You should see:
+
+"some string"

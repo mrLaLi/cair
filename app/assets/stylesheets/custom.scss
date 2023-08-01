@@ -1,0 +1,26 @@
+// Override and add customized styles in this file.
+//
+// You can also create SCSS files in the app/assets/stylesheets/custom/
+// folder and they will be loaded automatically.
+.top-links {
+    background:  #edebd9;
+    color: black
+  }
+  div#navigation_bar{
+    background: #edebd9;
+    }
+ 
+.button:hover, .button:focus {
+    background-color: #373435;
+    color: #fefefe;
+    }
+.budget-header .main-link{
+    background-color:  #BEAC82;
+    }
+.auth-image{
+    background: #BEAC82;
+    }
+.budgets-index > header a, > header a, .budget-groups-index > header a, .budget-ballot-show > header a, .budget-header a{
+  background: #373435;
+  background-color: #BEAC82;
+  }

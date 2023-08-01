@@ -1,0 +1,13 @@
+<%= back_link_to management_users_path%>
+<%= form_for [@reciver, @direct_message], model: @rejection_message, url: management_user_rejection_messages_path, method: :post, local: true do |f| %>
+  <h1>
+      <%= t("users.rejection_messages.new.title", receiver: @receiver.name) %>
+    </h1>
+    <%= render "shared/errors", resource: @direct_message %>
+    <%= f.text_field :title %>
+    <%= f.text_area :body, rows: "3" %>
+
+    <div class="small-12 medium-4">
+      <%= f.submit t("users.rejection_messages.new.submit_button"), class: "button primary " %>
+    </div>
+<%end%>

@@ -1,0 +1,24 @@
+<% if header.present? %>
+  <div class="header-card jumbo highlight">
+    <div class="row">
+      <% if header.image.present? %>
+        <div class="budget-header with-background-image"
+            style="background-image: url(<%= polymorphic_path(header.image.variant(:large)) %>); width:auto;">
+        </div>
+      <% end %>
+      <div class="small-12 medium-6 column <%= 'medium-9 small-centered text-center' %>">
+        <span><%= header.label %></span>
+        <h1><%= header.title %></h1>
+
+        <p class="lead"><%= header.description %></p>
+
+        <% if header.link_text.present? && header.link_url.present? %>
+          <div class="small-12 medium-6 column <%= 'medium-9 small-centered text-center' %>">
+            <%= link_to header.link_text, header.link_url, class: "button expanded large" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="background-header"></div>
+<% end %>

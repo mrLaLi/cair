@@ -1,0 +1,8 @@
+sq:
+  milestones:
+    index:
+      no_milestones: Nuk ka afate të përcaktuara
+      progress: Progresi
+    show:
+      publication_date: "Publikuar %{publication_date}"
+      status_changed: Statusi i investimeve u ndryshua

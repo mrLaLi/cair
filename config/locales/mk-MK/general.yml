@@ -1,0 +1,996 @@
+mk:
+  account:
+    show:
+      change_credentials_link: Смени ги моите податоци
+      erase_account_link: Избриши ја мојата корисничка сметка
+      finish_verification: Комплетирај верификација
+      notifications: Нотификации
+      personal: Лични детали
+      public_interests_my_title_list: Тагови на елементи кои ги следиш
+      public_interests_user_title_list: Тагови на елементи кои овој корисник ги следи
+      save_changes_submit: Зачувај промени
+      recommendations: Препораки
+      title: Мој профил
+      user_permission_info: Со својот профил можеш...
+      user_permission_title: Партиципација
+      user_permission_verify: За да ги извршиш сите акции верифицирај го твојот профил.
+      verified_account: Верификуван профил
+      verify_my_account: Потврди го мојот профил
+    update_data: Променете ги податоците
+    save_changes: Зачувајте ги промените
+    restore_data: Вратете ги податоците
+    personaldetails: Кликнете овде за повеќе
+  application:
+    close: Затвори
+    menu: Мени
+  comments:
+    comments_closed: Коментарите се затворени
+    verified_only: За да учествуваш %{verify_account}
+    actions:
+      confirm_delete: Дали сте сигурни? Ова дејство ќе го избрише овој коментар. Не можете да го вратите ова дејство.
+      delete: Избришете коментар
+    comment:
+      admin: Администратор
+      author: Автор
+      deleted: Овој коментар беше избришан
+      moderator: Модератор
+      responses:
+        zero: Нема одговори
+        one: 1 одговор
+        other: "%{count} одговори"
+      responses_show:
+        zero: Нема одговори
+        one: "1 одговор (покажи)"
+        other: "%{count} одговори (покажи)"
+      responses_collapse:
+        zero: Нема одговори
+        one: "1 одговор (спушти)"
+        other: "%{count} одговори (спушти)"
+      user_deleted: Избришан корисник
+      votes:
+        zero: Нема гласови
+        one: 1 глас
+        other: "%{count} гласови"
+    form:
+      comment_as_admin: Коментирај како администратор
+      comment_as_moderator: Коментирај како модератор
+      leave_comment: Остави коментар
+    orders:
+      most_voted: Најгласано
+      newest: Прво најново
+      oldest: Прво најстаро
+      most_commented: Најкоментирано
+    show:
+      return_to_commentable: "Врати се до "
+  comments_helper:
+    comment_button: Објави коментар
+    comment_link: Коментар
+    comments_title: Коментари
+    reply_button: Објавете го одговорот
+    reply_link: Одговори
+  debates:
+    create:
+      form:
+        submit_button: Започнете дебата
+    debate:
+      comments:
+        zero: Нема коментари
+        one: 1 коментар
+        other: "%{count} коментари"
+      votes:
+        zero: Нема гласови
+        one: 1 глас
+        other: "%{count} гласови"
+    edit:
+      editing: Уредете ја дебатата
+      show_link: Погледнете ја дебатата
+      form:
+        submit_button: Зачувај промени
+    form:
+      tags_instructions: Означете ја оваа дебата.
+      tags_placeholder: "Внесете ги ознаките што сакате да ги користите, одделени со запирки (',')"
+      info_text: Ако сакате да креирате предлог, ова е погрешен дел, одете на %{link} за да креирате предлог.
+    index:
+      featured_debates: Избрани
+      orders:
+        confidence_score: највисоко оценети
+        created_at: најнови
+        hot_score: најактивни
+        most_commented: најкоментирани
+        relevance: lidhja
+        recommendations: rekomandimet
+      recommendations:
+        without_results: Нема дебати поврзани со вашите интереси
+        without_interests: Заследи предлози за да може да може да пронајдеш слични
+        disable: "Препораките за дебати ќе престанат да се прикажуваат ако ги исклучите. Можете повторно да ги уклучите на страницата 'Моја сметка'"
+        actions:
+          success: "Препораките за дебати сега се исклучени за оваа сметка"
+          error: "Се појави грешка. Одете на страницата 'Моја сметка' за рачно да ги исклучите препораките за дебати"
+      search_form:
+        button: Пребарување
+        placeholder: Пребарувајте дебати...
+        title: Пребарување
+      start_debate: Започнете дебата
+      title: Дебати
+      section_header:
+        title: Дебати
+        icon_alt: Икона за дебати
+        help: Помогнете со дебати
+      section_footer:
+        title: Помогнете со дебати
+        description: Започнете дебата за да споделите мислења со другите за темите што ве интересираат.
+        help_text_1: "Просторот за граѓански дебати е наменет за секој кој може да изложи прашања од нивна грижа и оние кои сакаат да споделат мислења со други луѓе."
+        help_text_2: 'За да отворите дебата, треба да се регистрирате на %{org}. Корисниците можат да коментираат и на отворените дебати и да ги оценуваат со копчињата "Се согласувам" или "Не се согласувам" кои се наоѓаат во секоја од нив.'
+    new:
+      form:
+        submit_button: Започнете дебата
+      more_info: Како функционираат дебатите?
+      recommendation_four: Уживајте во овој простор и во гласовите што го исполнуваат. Тоа ти припаѓа и тебе.
+      recommendation_one: Не користете големи букви за насловот на дебатата или за цели реченици. На интернет ова се смета за викање. И никој не сака да му се довикуваат.
+      recommendation_three: Ригорозната критика е многу добредојдена. Ова е простор за размислување. Но, ви препорачуваме да се држите до елеганцијата и интелигенцијата. Светот е подобро место со овие доблести во него.
+      recommendation_two: Секоја дебата или коментар што сугерира незаконско дејство ќе биде избришана, како и оние кои имаат намера да ги саботираат дебатните простори. Сè друго е дозволено.
+      recommendations_title: Препораки за креирање дебата
+      start_new: Започнете дебата
+    show:
+      author_deleted: Избришан корисник
+      comments:
+        zero: Нема коментари
+        one: 1 коментар
+        other: "%{count} коментари"
+      comments_title: Коментари
+      edit_debate_link: Измени
+      flag: Оваа дебата беше посочена како несоодветна од повеќе корисници.
+      share: Сподели
+      author: Автор
+    update:
+      form:
+        submit_button: Зачувај промени
+  errors:
+    messages:
+      user_not_found: Корисникот не е пронајден
+      invalid_date_range: "Неважечки опсег на датуми"
+      allowed_file_content_types: типот на содржина мора да биде еден од %{types}
+      past_date: Не смее да биде минат датум
+      cannot_change_date:
+        poll_started: Не може да се смени ако гласањето веќе е започнато
+        poll_ended: Не може да се смени ако гласањето е веќе завршено
+  form:
+    accept_terms: Се согласувам со %{policy} и %{conditions}  
+    accept_terms_title: Се согласувам со Политиката за приватност и Условите и правилата за користење
+    conditions: Правила и услови на користење
+    debate: Дебата
+    direct_message: приватна порака
+    error: грешка
+    errors: грешки
+    not_saved: "спречи овој %{resource} да се зачува. <br>Ве молиме проверете ги означените полиња за да знаете како да ги поправите:"
+    policy: Политика за Приватност
+    proposal: Предлог
+    budget/investment: Инвестиции
+    budget/heading: Наслов на буџетот
+    poll/shift:
+    poll/question/answer: Одговор
+    document: Документ
+    topic: Тема
+    image: Слика
+    banner: банер
+    proposal_notification: Известување
+    budget/group: Буџетска група
+    geozone: геозона
+    legislation/draft_version: нацрт
+    legislation/process: процес
+    legislation/question: прашање
+    user: Сметка
+    verification/sms: телефон
+    signature_sheet: Лист за потпис
+    local_census_record: Запис за локален попис
+    local_census_records/import: Увоз на локални пописни записи
+    site_customization/content_block: блок на содржина
+    site_customization/page: страница
+    sdg/local_target: локална цел
+  geozones:
+    none: Сите градови
+  layouts:
+    application:
+      chrome: Google Chrome
+      firefox: Firefox
+      ie: 'Откривме дека прелистувате со Internet Explorer. За подобрено искуство, 
+	      препорачуваме користење на %{firefox} или %{chrome}.'
+      ie_title: Оваа веб-локација не е оптимизирана за вашиот прелистувач
+    dashboard:
+      proposal_header:
+        published: Објавено
+        draft: Нацрт текст
+        retired: Повлечен
+      proposal_totals:
+        active_resources: Активни ресурси
+        community: Учесници во вашата заедница
+        show_proposal: Прикажи предлог
+        preview_proposal: Преглед на предлогот
+        current_goal: Тековна цел
+        supports:
+          zero: Нема поддршка
+          one: 1 Поддршка
+          other: "Поддршки"
+    footer:
+      accessibility: Пристапност
+      conditions: Правила и услови на користење
+      consul: апликација КОНСУЛ
+      copyright: Општина Чаир, %{year}
+      info: Овој проект е поддржан од Амбасадата на САД. Мислењата, откритијата и заклучоците или препораките изнесени овде се на имплементаторите/ авторите, и не ги одразуваат оние на Владата на САД. 
+      description: Овој портал го користи %{consul} кој е %{open_source}.
+      participation_title: Партиципација
+      participation_text: Одлучете како да го обликувате градот во кој сакате да живеете.
+      privacy: Политика за Приватност
+      consul_url: https://github.com/consul/consul
+      open_source: софтвер со отворен код
+      open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
+    header:
+      administration_menu: Мени
+      administration: Администрација
+      collaborative_legislation: Колаборативна легислатива
+      debates: Дебати
+      moderation: Модерација
+      management: Управување
+      valuation: Вредност
+      help: Помош
+      my_account_link: Мој профил
+      my_activity_link: Моите активности
+      open_gov: Отворена влада
+      proposals: Предлози
+      budgets: Партиципативно буџетирање
+      poll_questions: Гласање
+      notification_item:
+        notifications: Нотификации
+      locale: 'Јазик:'
+      officing: Службеници за гласање
+      notification_item:
+        new_notifications:
+          one: Имате ново известување
+          other: Имате %{count} нови известувања
+          zero: Немате нови известувања
+      sdg: SDG
+  notifications:
+    index:
+      empty_notifications: Немате ново известување
+      mark_all_as_read: Oзначи ги сите како прочитани
+      read: Прочитајте
+      title: Нотификации
+      unread: Непрочитано
+    notification:
+      action:
+        comments_on:
+          one: Некој коментираше на
+          other: Има %{count} нови коментари на
+        proposal_notification:
+          one: Вклучено е едно ново известување
+          other: Вклучени се %{count} нови известувања
+        replies_to:
+          one: Некој одговори на вашиот коментар за
+          other: Има %{count} нови одговори на вашиот коментар за
+      mark_as_read: Означете како прочитано
+      mark_as_unread: Означете како не-прочитано
+      notifiable_hidden: Овој ресурс повеќе не е достапен.
+  map:
+    title: "Области"
+    proposal_for_district: "Започни предлог за твојата општина"
+    start_proposal: Направи предлог
+  omniauth:
+    facebook:
+      sign_in: Најавете се со Facebook
+      sign_up: Пријавете се со Facebook
+    finish_signup:
+      title: Дополнителни детали
+      username_warning: "Поради промена на начинот на кој комуницираме со социјалните мрежи, 
+	      можно е вашето корисничко име сега да се појавува како 'веќе во употреба'. 
+	      Ако тоа е вашиот случај, ве молиме изберете друго корисничко име."
+    google_oauth2:
+      sign_in: Најавете се со Google
+      sign_up: Пријавете се со Google
+      name: Google
+    wordpress_oauth2:
+      sign_in: Најавете се со Wordpress
+      sign_up: Пријавете се со Wordpress
+      name: Wordpress
+    twitter:
+      sign_in: Најавете се со Twitter
+      sign_up: Пријавете се со Twitter
+    info:
+      sign_in: 'Најавете се со:'
+      sign_up: 'Пријавете се со:'
+    or_fill: 'Или пополнете го следниов формулар:'
+  proposals:
+    create:
+      form:
+        submit_button: Направи предлог
+    created:
+      title: Честито! Го направивте првиот чекор.
+      motivation: 'Важно е да ја подготвите кампањата за лансирање за вашиот предлог да биде успешен. 
+	      Првите денови се одлучувачки.'
+      motivation_2: '<strong>Доколку сакате препораки за подготовка на објавувањето, оставете го 
+	      вашиот предлог како нацрт и ние ќе ве водиме.</strong>'
+      publish: Не, сакам да го објавам предлогот
+      dashboard: Да, сакам помош и ќе го објавам подоцна
+      preview_title: Вака ќе изгледа вашиот предлог кога ќе го објавите
+    edit:
+      editing: Измени пердлог
+      form:
+        submit_button: Зачувај промени
+      show_link: Види предлог
+    share:
+      improve_it: Подобрете ја вашата кампања и добијте поголема поддршка.
+      dashboard: Видете повеќе информации
+      message: 'Јас го поддржав предлогот %{title} во %{handle}. Доколку сте заинтересирани, поддржете го и вие!'
+    retire_form:
+      title: Затвори предлог
+      retired_explanation_placeholder: Опиши на кратко зошто мислиш дека овој предлог не треба повеќе да добива поддршка
+      submit_button: Затвори предлог
+      warning: 'Ако го повлечете предлогот, тој сепак ќе прифаќа поддршка, но ќе биде отстранет од главната 
+	      листа и пораката ќе биде видлива за сите корисници во која се наведува дека авторот смета дека 
+	      предлогот повеќе не треба да се поддржува'
+      retired_reason_blank: Изберете опција
+    retire_options:
+      unfeasible: Неизводливо
+      duplicated: Дуплифицирано
+      started: Веќе е во тек
+      done: Направено
+      other: Друго
+    form:
+      proposal_responsible_name_note: "(поединечно или како претставник на колектив; нема да бидат јавно прикажани)"
+      proposal_summary_note: "(максимуми 200 карактери)"
+      proposal_video_url_note: Може да додадете линк до YouTube или Vimeo
+      tag_category_label: "Категории"
+      tags_instructions: "Категоризирај го овој предлог. Можеш да одбереш од предложените категории или да додатеш твои"
+      tags_label: Тагови
+      map_location: Локација на мапата
+      map_location_instructions: Одете на мапата до локацијата и поставете го маркерот.
+      map_remove_marker: Отстранете го маркерот од мапата
+      tags_placeholder: "Внесете ги ознаките што сакате да ги користите, одделени со запирки (',')"
+    index:
+      featured_proposals: Избрани
+      orders:
+        confidence_score: највисоко оценети
+        created_at: најнови
+        hot_score: најактивни
+        most_commented: најкоментирани
+        relevance: врска
+        archival_date: архивирано
+        recommendations: препораки
+      recommendations:
+        without_results: Нема предлози поврзани со твоите интереси
+        without_interests: Заследи предлози за да може да може да пронајдеш слични
+        disable: "Препораките за предлози ќе престанат да се прикажуваат ако ги отфрлите.
+          Можете повторно да ги овозможите на страницата 'Моја сметка'."
+        actions:
+          success: Препораките за предлози сега се оневозможени за оваа сметка
+          error: "Се појави грешка. Одете на страницата 'Моја сметка' за рачно да ги 
+	          оневозможите препораките за предлози"
+      retired_proposals: Затворени предлози
+      retired_proposals_link: "Предлози затворени од авторот"
+      selected_proposals: Избрани предлози
+      selected_proposals_link: Покажиги избраните предлози
+      archived_proposals: Архивирани предлози
+      proposals_lists: Листа на предлози
+      retired_links:
+        all: Сите
+        unfeasible: Неизводливо
+        duplicated: Дупликати
+        started: Во тек
+        done: Завршени
+        other: Други
+      search_form:
+        button: Пребарување
+        placeholder: Пребарај предлози...
+        title: Пребарување
+      search_results:
+        one: "што го содржи терминот <strong>'%{search_term}'</strong>"
+        other: "што го содржи терминот <strong>'%{search_term}'</strong>"
+      select_order_long: "Прегледуваш предлози според:"
+      start_proposal: Направи предлог
+      title: Предлози
+      top_link_proposals: Најподдржаните предлози според категорија
+      section_header:
+        icon_alt: Икона на предлози
+        title: Предлози
+        help: Помош околку предлози
+      section_footer:
+        title: Помош околку предлози
+        description: Граѓанските предлози се можност соседите и колективите директно да одлучат како сакаат да им биде градот, откако ќе добијат доволна поддршка и ќе се поднесат на гласање од граѓаните.
+    new:
+      form:
+        submit_button: Направи предлог
+      more_info: Како работат граѓански предлози?
+      recommendations_title: Препораки за креирање предлог
+      recommendation_one: Не користи големи букви во насловот или во цели реченици. На интернет, ова се смета како викање, а никој неќе да му се вика.
+      recommendation_two: Секој предлог или коментар што сугерира незаконско дејствување ќе биде избришан, како и оние кои имаат намера да ги саботираат дебатните простори. Сè друго е дозволено.
+      recommendation_three: Уживајте во овој простор и во гласовите што го исполнуваат. Тоа ти припаѓа и тебе.
+      start_new: Направи нов предлог
+    notice:
+      retired: Предлогот е затворен
+      published: Предлогот е објавен
+    proposal:
+      created: "Направи нов предлог!"
+      share:
+        guide: "Сега можете да го споделите за луѓето да почнат да поддржуваат."
+        edit: "Пред да се сподели, ќе можете да го менувате текстот како што сакате."
+        view_proposal: Не сега, однеси ме до мојот предлог
+      already_supported: Веќе го поддржавте овој предлог. Сподели го!
+      support: Поддршка
+      support_title: Поддржете го овој проект
+      supports:
+        zero: Нема поддршка
+        one: 1 поддршка
+        other: "%{count} поддршки"
+      comments:
+        zero: Нема коментари
+        one: 1 коментар
+        other: "%{count} коментари"
+      votes:
+        zero: Нема гласови
+        one: 1 глас
+        other: "%{count} гласови"
+      supports_necessary: "%{number} потребни гласови"
+      total_percent: 100%
+      archived: "Овој предлог е архивиран и неможе да се подржува."
+      successful: "Овој предлог ја постигна потребната подршка"
+      support_label: Поддршка %{proposal}
+      reason_for_supports_necessary: ''
+      selected: Избран предлог
+    show:
+      dashboard_proposal_link: Контролна табла
+      milestones_tab: Пресвртници
+      draft: 'Предлог во нацрт. Сè уште не може да добие поддршка, ниту се појавува на списокот со предлози.'
+      author_deleted: Избришан корисник
+      code: "Код за предлог:"
+      comments:
+        zero: Нема коментари
+        one: 1 коментар
+        other: "%{count} коментари"
+      comments_tab: Коментари
+      flag: Овој предлог е означен како несоодветен од неколку корисници.
+      notifications_tab: Нотификации
+      share: Сподели
+      title_video_url: "Надворешно видео"
+      author: Автор
+      retired_warning: "Авторот смета дека овој предлог не треба да добие поголема поддршка."
+      retired_warning_link_to_explanation: "Прочитајте го објаснувањето пред да гласате за него."
+      retired: Предлогот е повлечен од авторот
+      no_notifications: "Овој предлог нема известувања."
+      embed_video_title: "Видео на %{proposal}"
+    update:
+      form:
+        submit_button: Зачувај промени
+  dashboard:
+    menu:
+      my_proposal: Уреди го мојот предлог
+      resources: Ресурси
+      mailing: Е-пошта
+      poster: Постер
+      messages: Порака до корисниците
+      related_content: Поврзани содржини
+      progress: Прогрес
+      community: Заедница
+      polls: Анкети
+      recommended_actions: Препорачани дејства
+    form:
+      request: Барање
+    create_request:
+      success: Барањето е успешно испратено. Ќе ве контактираме што е можно поскоро за да ве информираме за тоа.
+      archived: Овој предлог е архивиран и не може да бара ресурси.
+    progress:
+      supports: Поддршки
+      title: Графички
+      group_by_month: Месечно
+      group_by_week: Неделно
+      group_by_date: Дневно
+      progress: Акумулиран напредок
+      success: Идеален напредок
+      new_action: Ново
+    index:
+      title: Издание
+      publish: Објавете предлог
+      edit_proposal_link: Уреди предлог
+      retire: Повлечете го предлогот
+    recommended_actions:
+      pending_title: Во очекување
+      done_title: Направено
+      title: Препорачани дејства
+      goto_proposed_actions: Одете на препорачаните дејства
+      see_proposed_actions: Проверете ги препорачаните дејства
+      hide_proposed_actions: Сокријте ги препорачаните дејства
+      show_description: Прикажете опис
+      without_pending_actions: Нема препорачани дејства на чекање
+      done_title: Извршено
+      without_done_actions: Не се направени препорачани дејства
+    resources:
+      available_resources: Достапни ресурси
+    resource:
+      required_days: "%{days} потребни денови"
+      required_supports: "%{supports} потребни поддршки"
+      and: и
+      view_resource: Видете го ресурсот
+      resource_requested: Ресурсот веќе е побаран
+      request_resource: Побарајте ресурс
+      resource_locked: Ресурсот е заклучен
+    index:
+      edit_proposal_link: Измени пердлог
+      retire: Затвори предлог
+    new_request:
+      links: Линкови
+    recommended_actions:
+      pending_title: Во исчекување
+    next_goal:
+      title: Цел
+      see_complete_course: Проверете го целосниот курс
+      hide_course: Скријте го курсот
+    goal:
+      target_supports:
+        one: Добијте %{count} поддршка за вашиот предлог
+        other: Добијте %{count} поддршка за вашиот предлог
+      days:
+        one: '%{count} ден'
+        other: '%{count} денови'
+      locked_resource: Ресурсот е заклучен
+      ideal_time: Идеално време
+    community:
+      access_community: Пристап до заедницата
+      participants: Учесници
+      debates: Дебати
+      comments: Коментари
+      latest_activity: 'Најнова активност на заедницата: %{at}'
+      latest_comments: Најновите пораки
+    messages:
+      send_notification: Испратете известување до следбениците на предлогот
+      previous_notifications: Погледнете ги претходните известувања
+    polls:
+      index:
+        title: Анкети
+        links: Линкови
+        additiontal_information: Додатни информации
+        create: Создадете анкета
+        count:
+          one: Создадовте %{count} анкета.
+          other: Создадовте %{count} анкети.
+      new:
+        title: Нова анкета
+        submit: Создадете анкета
+      edit:
+        submit: Ажурирајте ја анкетата
+      poll:
+        responses:
+          one: '%{count} одговор'
+          other: '%{count} одговори'
+        view_results: Погледнете ги резултатите
+        edit_poll: Уредете ја анкетата
+        show_results_help: 'Ако го означите ова поле, резултатите ќе бидат јавни и 
+	        сите корисници ќе можат да ги видат'
+        delete: Избришeте ја анкетата
+        alert_notice: Оваа акција ќе ја отстрани анкетата и сите прашања поврзани со неа.
+        success_notice: Анкетата е успешно избришана
+        unable_notice: Не можете да уништите анкета што има одговори
+      form:
+        name: Наслов на анкетата
+        add_question: Додадете прашање
+      question_fields:
+        remove_question: Отстранете прашање
+        add_answer: Додадете одговор
+      question_answer_fields:
+        remove_answer: Отстранете одговор
+    poster:
+      index:
+        title: Преглед на постер
+        poster_title: Не продолжувајте да гледате,
+        poster_subtitle: поддржете ме! ;)
+        intro_text: '<strong>Јас учествувам во %{org}</strong> со мој предлог на граѓанин 
+	        и само со ваша поддршка можеме да го направиме градот кој сите го посакуваме'
+        proposal_code: 'Кодекс на предлогот: %{code}'
+        support: Поддржете го мојот предлог
+        footer: '<strong>Visit %{link} и поддржете го овој предлог.</strong> Колку повеќе, толку подобро. 
+	        Ајде да го направиме нашиот дел. Ви благодарам!'
+      new:
+        title: Постер од вашиот предлог
+      options:
+        preview: Преглед
+        download: Преземање
+    mailing:
+      index:
+        title: Преглед на е-пошта
+      new:
+        title: Модел на е-пошта за споделување
+      mailing_options:
+        send: 'Пратете на %{address}'
+        preview: Преглед
+      create:
+        sent: Е-поштата е испратена
+    mailer:
+      forward:
+        subtitle: 'Ако ме поддржите, <br>ќе го постигнеме тоа.'
+        support_button: Поддржете го овој предлог
+        share_in: Споделете во
+        hi: Здраво!
+        introduction: 'Ви пишувам за да ве известам дека учествувам во %{org}, 
+	        платформата на која можеме да одлучиме кој град го сакаме. 
+	        И за тоа, создадов свој предлог на граѓанин и сега, ќе ми треба вашата поддршка! 
+	        Но, не грижете се бидејќи е многу едноставно.'
+        support: 'Само треба да кликнете на копчето што ќе го видите подолу „Поддржете го овој предлог“ 
+	        и можете да се информирате пред да го промовирате. Само предлозите што ќе постигнат максимална 
+	        поддршка ќе ги спроведе Градскиот совет, а јас сум сигурен дека вие ќе ми помогнете да 
+	        го постигнам тоа!'
+        share: 'И ако ми ја направите големата услуга да го споделите мојот предлог со вашите пријатели, 
+	        семејството и контактите, тоа би било совршено!'
+  polls:
+    all: "Сите"
+    no_dates: "нема доделен датум"
+    dates: "Од %{open_at} до %{closed_at}"
+    final_date: "Конечни извештаи / резултати"
+    index:
+      filters:
+        current: "Отворено"
+        expired: Истечен
+      title: "Анкети"
+      participate_button: "Учествувајте во оваа анкета"
+      participate_button_expired: "Анкетата заврши"
+      no_geozone_restricted: "Цел град"
+      geozone_restricted: "Области"
+      geozone_info: "Може да учествуваат луѓе во Пописот на:"
+      already_answer: "Веќе учествувавте во оваа анкета"
+      not_logged_in: "Мора да се најавите или да се пријавите за да учествувате"
+      unverified: "Мора да ја потврдите вашата сметка за да учествувате"
+      cant_answer: "Оваа анкета не е достапна на вашата геозона"
+      section_header:
+        icon_alt: Икона за гласање
+        title: Гласање
+        help: Помош за гласањето
+      section_footer:
+        title: Помош за гласањето
+        description: Анкетите на граѓаните се партиципативен механизам со кој граѓаните со избирачко право можат да носат директни одлуки.
+      no_polls: "Нема отворено гласање."
+    show:
+      cant_answer_not_logged_in: "Неопходно е %{signin} или %{signup} за учество."
+      comments_tab: Коментари
+      documents: Документи
+      videos: "Надворешно видео"
+      results:
+        title: "Прашање"
+      already_voted_in_booth: "Веќе сте учествувале на физички штанд. Не можете повторно да учествувате."
+      already_voted_in_web: "Веќе учествувавте во оваа анкета. Ако гласате повторно ќе биде препишано."
+      back: "Врати се на гласање"
+      cant_answer_verify: "Мора да %{verify_link} за да одговорите."
+      verify_link: "потврдете ја вашата сметка"
+      cant_answer_expired: "Оваа анкета е завршена."
+      cant_answer_wrong_geozone: "Ова прашање не е достапно на вашата геозона."
+      more_info_title: "Повеќе информации"
+      zoom_plus: "Проширете ја сликата"
+      read_more: "Прочитајте повеќе за %{answer}"
+      read_less: "Прочитајте помалку за %{answer}"
+      info_menu: "Информации"
+      stats_menu: "Статистика за учество"
+      results_menu: "Резултати од анкетата"
+      stats:
+        total_votes: "Вкупен износ на дадени гласови"
+        votes: "ГЛАСА"
+        web: "ВЕБ" 
+        booth: "КАБИНА"
+        total: "ВКУПНО"
+        valid: "Вредни"
+        mail: ПОШТА
+        white: "Целосно празно"
+        null_votes: "Неважечки"
+      results:
+        title: "Прашања"
+        most_voted_answer: "Најгласен одговор:" 
+    poll_header:
+      back_to_proposal: Назад на предлогот    
+  poll_questions:
+    show:
+      vote_answer: Гласајте %{answer}
+      voted: Вие гласавте %{answer}
+  proposal_notifications:
+    new:
+      title: "Испрати известување"
+      submit_button: "Испрати известување"
+      proposal_page: "страницата на предлогот"
+      info_about_receivers: 'Ова известување ќе биде испратено до <strong>%{count} people</strong>и 
+	      ќе биде видливо во %{proposal_page}.<br> Известувањата не се испраќаат веднаш, 
+	      корисниците периодично ќе добиваат е-пошта со сите известувања за предлозите.'
+    show:
+      back: "Врати се на мојата содржина"
+  shared:
+    edit: "Измени"
+    filter: "Филтрирај"
+    save: "Зачувај"
+    search_results: "Резултати од пребарувањето"
+    advanced_search:
+      date: "Датум"
+      date_placeholder: "ДД/ММ/ГГГГ"
+      date_range_blank: "Избирајте датум"
+      date_1: "Последни 24 часа"
+      date_2: "Мината недела"
+      date_3: "Минатиот месец"
+      date_4: "Мината година"
+      date_5: "Дефинирај сам датум"
+      from: "Од"
+      general: "Текст за пребарување"
+      goal: "Со ЦОР"
+      goal_blank: "Ибирајте ЦОР"
+      search: "Филтрирај"
+      target: "Со таргет"
+      target_blank: "Избирајте таргет"
+      title: "Напредно пребарување"
+      to: "До"
+    delete: Избришете
+    'yes': 'Да'
+    'no': 'Не'
+    author_info:
+      author_deleted: Избришан корисник
+      email_deleted: Е-поштата е избришана
+    check: Изберете
+    check_none: Никој
+    collective: Колективно
+    flag: Означете како несоодветно
+    check_all: Сите
+    back: Врати се назад
+    following: "Следи"
+    follow: Следете
+    follow_entity: "Следи %{entity}"
+    followable:
+      budget_investment:
+        create:
+          notice: 'Сега го следите овој инвестициски проект! <br> Ќе ве известиме за промените 
+	          кога ќе се случат за да бидете во тек.'
+        destroy:
+          notice: 'Престанавте да го следите овој инвестициски проект! <br> 
+	          Веќе нема да добивате известувања поврзани со овој проект.'
+      proposal:
+        create:
+          notice: 'Сега го следите овој предлог на граѓаните! <br> 
+	          Ќе ве известиме за промените кога ќе се случат за да бидете во тек.'
+        destroy:
+          notice: 'Престанавте да го следите овој предлог на граѓаните! <br> 
+	          Веќе нема да добивате известувања поврзани со овој предлог.'
+    print:
+      print_button: Испечатете ја оваа информација
+    search: Пребарувајте
+    show: Прикажете
+    suggest:
+      debate:
+        see_all: "Види ги сите"
+        found:
+            one: "Има дебата со терминот '%{query}', можете да учествувате на неа наместо да отворате нова."
+            other: "Има дебати со терминот '%{query}', можете да учествувате во нив наместо да отворате нова."  
+        message: 'Гледате %{limit} од %{count} дебати што го содржат терминот „%{query}“'
+      budget_investment:
+        found:
+          one: "Има инвестиција со терминот '%{query}', можете да учествувате во неа наместо да отворите нова."
+          other: "Има инвестиции со терминот '%{query}', можете да учествувате во нив наместо да отворате нова."
+        message: "Гледате %{limit} од %{count} инвестиции кои го содржат терминот '%{query}'"
+        see_all: "Види ги сите"
+      proposal:
+        found:
+          one: "Има предлог со терминот '%{query}', можете да придонесете за него наместо да креирате нов"
+          other: "Има предлози со терминот '%{query}', можете да придонесете за нив наместо да креирате нов"
+        message: "Гледате %{limit} од %{count} предлози што го содржат терминот '%{query}'"
+        see_all: "Види ги сите"
+    tags_cloud:
+      tags: Тагови
+      districts: "Области"
+      categories: "Категории"
+      districts_list: Список на области
+    share: Сподели
+    documentation: Дополнителна документација
+    view_mode:
+      title: Начин на прикажување
+      cards: Карти
+      list: Листа
+    recommended_index:
+      see_more: Видете повеќе препораки
+      title: Препораки
+      hide: Сокриј препораки
+    translations:
+      description: "Ако сакате вашата објава да биде на повеќе јазици, изберете го дополнителниот јазик и додајте ја содржината на тој јазик."
+      select_language_prompt: Одберете јазик
+      remove_language: Отсранете јазик
+      add_language: Додадете јазик
+      languages_in_use:
+        zero: 0 јазици во употреба
+        one: 1 јазик во употреба
+        other: '%{count} јазици во употреба'
+    optional: "Изборни полиња"
+    required: "Задолжителни полиња"
+    comments:
+      one: 1 коментар
+      other: '%{count} коментари'
+      zero: Нема коментари
+  social:
+    facebook: '%{org} Facebook'
+    twitter: '%{org} Twitter'
+    youtube: '%{org} YouTube'
+    telegram: '%{org} Telegram'
+    instagram: '%{org} Instagram'
+  stats:
+    index:
+      debates: Дебати
+      proposals: Предлози
+      comments: Коментари
+      visits: Посети
+      proposal_votes: Гласови за предлози
+      debate_votes: Гласови за дебати
+      comment_votes: Гласови за коментари
+      votes: Вкупно гласови
+      verified_users: Проверени корисници
+      unverified_users: Непроверени корисници
+  unauthorized:
+    default: Немате дозвола за пристап до оваа страница.
+    manage:
+      all: Немате дозвола да го извршите дејството '%{action}' на %{subject}.
+  users:
+    login_to_comment: "Мора да %{signin} или %{signup} за да оставите коментар."
+    login_to_continue: "Мора да %{signin} или %{signup} за да продолжите."
+    signin: најавете се
+    signup: пријавете се
+    verify_account: потврдете ја вашата сметка
+    rejection_messages:
+        new:
+          title: Причина за одбивање за %{receiver}
+          submit_button: Испрати
+    direct_messages:
+      new:
+        direct_messages_bloqued: Овој корисник одлучи да не прима директни пораки
+        submit_button: Испратете порака
+        title: Испратете приватна порака до %{receiver}
+        verified_only: За да испратите приватна порака %{verify_account}
+      show:
+        receiver: Пораката е испратена до %{receiver}
+    show:
+      deleted: Избришано
+      deleted_debate: Оваа дебата е избришана
+      deleted_proposal: Овој предлог е избришан
+      deleted_budget_investment: Овој инвестициски проект е избришан
+      proposals: Предлози
+      proposals_status: Статус
+      debates: Дебати
+      budget_investments: Буџетски инвестиции
+      comments: Коментари
+      actions: Акции
+      filters:
+        comments:
+          one: 1 Коментар
+          other: "%{count} Коментари"
+        debates:
+          one: 1 Дебата
+          other: "%{count} Дебати"
+        proposals:
+          one: 1 Предлог
+          other: "%{count} Предлози"
+        budget_investments:
+          one: 1 Инвестиција
+          other: "%{count} Инвестиции"
+        follows:
+          one: 1 Следи
+          other: "%{count} Следи"
+      no_activity: Корисникот нема јавна активност
+      no_private_messages: "Овој корисник не прима приватни пораки."
+      private_activity: Овој корисник одлучи да го задржи списокот со активности како приватен.
+      send_private_message: "Испрати приватна порака"
+      send_rejection_message: Испрати порака за одбивање
+      delete_alert: "Дали сте сигурни дека сакате да го избришете вашиот инвестициски проект? Овој чекор не може да се отповикува"
+    proposals:
+      draft: Нацрт текст
+      published: Објавено
+      actions: Акции
+      retired: "Повлечен предлог"
+      published: Објавено
+      see: Види предлог
+      retired_help_text: Контролната табла не е достапна за повлечени предлози
+  votes:
+    agree: Cе согласувам
+    anonymous: Премногу анонимни гласови за да се признае гласот %{verify_account}.
+    disagree: Hе се согласувам
+    organizations: На организациите не им е дозволено да гласаат
+    supports: Поддршки
+    verified_only: Само проверени корисници можат да гласаат за предлозите; %{verify_account}.
+    agree_label: Се согласувам со %{title}
+    disagree_label: Не се согласувам со %{title}
+    budget_investments:
+      not_verified: Само проверени корисници можат да гласаат за инвестициски проекти; %{verify_account}.
+      unfeasible: Не може да се поддржат неостварливи инвестициски проекти
+      not_voting_allowed: Фазата на гласање е затворена
+      different_heading_assigned:
+        one: "Може да поддржувате инвестициски проекти само во %{count} област. Веќе поддржавте инвестиции во %{supported_headings}." 
+        other: "Може да поддржувате инвестициски проекти само во %{count} области. Веќе поддржавте инвестиции во %{supported_headings}."
+  welcome:
+    recommended:
+      title: Препораки кои може да ве интересираат
+      help: Овие препораки се генерирани од ознаките на дебатите и предлозите што ги следите.
+      proposals:
+        title: Препорачани предлози
+        btn_text_link: Сите препорачани предлози
+      debates:
+        title: Препорачани дебати
+        btn_text_link: Сите препорачани дебати
+      budget_investments:
+        title: Препорачани инвестиции
+      slide: "Видете %{title}"
+    feed:
+      most_active:
+        debates: "Најактивни дебати"
+        proposals: "Најактивни предлози"
+      see_all:
+        debates: Видете ги сите дебати
+        processes: Видете ги сите процеси
+        proposals: "Видете ги сите предлози"
+      no_items:
+        debates: Во моментов нема дебати
+        proposals: Во моментов нема предлози
+      see_process: Погледнете го процесот
+      process_label: Процес
+    cards: 
+        title: Карактеристики
+    welcome:
+      title: Учествувај
+      user_permission_info: Со својот профил можеш...
+      user_permission_verify_my_account: Потврди го мојот профил
+      go_to_index: Не сега, одете на страницата со индекс
+      start_using_consul: Одете на страницата со индекс
+      user_permission_verify: За да ги извршите следните дејства, потврдете ја вашата сметка.
+  invisible_captcha:
+    sentence_for_humans: Ако сте човек, игнорирајте го ова поле
+    timestamp_error_message: Извинете, беше пребрзо! Ве молиме испратете повторно.
+  related_content:
+    title: Поврзана содржина
+    add: Додадете поврзана содржина
+    label: Линк до поврзаната содржина
+    placeholder: '%{url}'
+    help: Можете да додадете линкови од %{models} во %{org}.
+    submit: Додадете
+    error: Линкот не е валиден. Запомнете да започнете со %{url}.
+    error_duplicate: Поврзаната содржина што ја додавате веќе постои.
+    error_itself: Линкот не е валиден. Не можете да поврзете содржина со самата себе.
+    success: Додадовте нова поврзана содржина
+    is_related: Дали е поврзана содржина?
+    score_positive: 'Да'
+    score_negative: 'Не'
+    content_title:
+      proposal: "Предлог"
+      debate: "Дебата"
+      budget_investment: "Буџетски инвестиции"
+  admin/widget:
+    header:
+      title: Администрација
+  annotator:
+    help:
+      alt: Изберете го текстот што сакате да го коментирате и притиснете го копчето со моливот.
+      text: 'За да го коментирате овој документ мора да %{sign_in} или %{sign_up}. 
+	      Потоа изберете го текстот што сакате да го коментирате и притиснете го копчето со моливот.'
+      title: Како можам да го коментирам овој документ?
+  links:
+    form:
+      delete_button: Избриши
+      cancel_button: Откажи
+    nested_links:
+      title: Линкови
+      note: Додадете ги линковите што се од интерес
+      add_new_link: Додадете нов линк
+  communities:
+    show:
+      surveys: Анкети
+      complete_survey: Пополнете ја анкетата
+    subnav:
+      surveys: Анкети
+    poll:
+      take_part: Учествувајте од %{from} до %{to}
+  remote_translations:
+    text: Содржината на оваа страница не е достапна на вашиот јазик
+    all_remote_translations_enqueued_text: 'За краток временски период, 
+	    освежувајќи ја страницата, ќе можете да ја видите целата содржина на вашиот јазик.'
+    create:
+      enqueue_remote_translation: Преводите се правилно побарани.
+    button: Преведете ја страницата
+  tags:
+    list:
+      filter:
+        more:
+          one: Уште една ознака
+          other: '%{count} повеќе ознаки'
+  machine_learning:
+    comments_summary: Резиме на коментари
+    info_text: 'Содржина генерирана од вештачка интелигенција / машинско учење'

@@ -1,0 +1,2 @@
+module Verification::RequestHelper
+end

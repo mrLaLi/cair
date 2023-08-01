@@ -1,0 +1,237 @@
+mk:
+  budgets:
+    ballots:
+      show:
+        amount_progress: '%{amount_spent} / %{amount_limit}'
+        amount_available:
+          approval:
+            zero: Сè уште можете да дадете <span>%{count}</span> гласови.
+            one: Сè уште можете да дадете <span>%{count}</span> глас.
+            other: Сè уште можете да дадете <span>%{count}</span> гласови.
+          knapsack: "Сè уште ви е достапно <span>%{count}</span>"
+        title: Вашиот глас
+        no_balloted_group_yet: "Сè уште не сте гласале за оваа група, одете гласајте!"
+        remove: "Отстрани глас"
+        amount_limit:
+          knapsack: "Вкупен буџет <span>%{count}</span>"
+          approval:
+            one: Можете да гласате <span>1</span> проект
+            other: Можете да гласате до <span>%{count}</span> проекти
+        amount_spent:
+          knapsack: "Потрошена сума <span>%{count}</span>"
+          approval:
+            zero: 'Дадени гласови: <span>%{count}</span>'
+            one: 'Дадени гласови: <span>%{count}</span>'
+            other: 'Дадени гласови: <span>%{count}</span>'
+        voted_info: Вашето гласачко ливче е потврдено!
+        voted_info_2: Но, можете да го промените вашиот глас во секое време додека не се затвори оваа фаза.
+        voted: 
+          one: "Вие гласавте за <span>една</span> инвестиција."
+          other: "Гласавте <span>%{count}</span> инвестиции."
+        zero: Не сте гласале ниту еден инвестициски проект.
+        remove_label: Повлечете го вашиот глас за %{investment}
+      reasons_for_not_balloting:
+        not_verified: Само проверени корисници можат да гласаат за инвестиции; %{verify_account}.
+        not_selected: Неизбраните инвестициски проекти не можат да бидат поддржани
+        not_enough_money: Веќе го доделивте достапниот буџет.<br><small>Запомнете дека можете %{change_ballot} во секое време</small>
+        no_ballots_allowed: Фазата за избор е затворена
+        different_heading_assigned: "Веќе гласавте за друг наслов: %{heading_link}"
+        change_ballot: сменете ги вашите гласови
+        not_enough_available_votes: Го достигнавте максималниот дозволен број гласови
+        casted_offline: Веќе сте учествувале офлајн
+    groups:
+      show:
+        title: Изберете наслов
+    phase:
+      drafting: Нацрт (не е видлив за јавноста)
+      informing: Информации
+      accepting: Прифаќање проекти
+      reviewing: Преглед на проекти
+      selecting: Избор на проекти
+      valuating: Вреднување на проекти
+      publishing_prices: Цени за издавачки проекти
+      balloting: Гласање на проекти
+      reviewing_ballots: Преглед на гласањето
+      finished: Завршен буџет
+    index:
+      title: Партиципативно буџетирање
+      empty_budgets: Нема буџет.
+      section_header:
+        icon_alt: Икона партиципативен буџетирање
+        title: Партиципативно буџетирање
+        help: Помогнете со партиципативни буџети
+      all_phases: Фази на партиципативен буџет
+      next_phase: Следна фаза
+      prev_phase: Претходна фаза
+      current_phase: Сегашна фаза
+      map: Предлозите за буџетски инвестиции лоцирани географски
+      finished_budgets: Завршени партиципативни буџети
+      see_results: Види резултати
+      section_footer:
+        title: Помогнете со партиципативни буџети
+        description: Со партиципативните буџети граѓаните одлучуваат за кои проекти е наменет дел од буџетот.
+      milestones: 
+    investments:
+      form:
+        subtitle: '%{heading} (%{price})'
+        subtitle_without_price: '%{heading}'
+        title: Направете буџетска инвестиција
+        tag_category_label: "Категории"
+        tags_instructions: "Категоризирај го овој предлог. Можеш да одбереш од предложените категории или да додатеш твои"
+        tags_label: Тагови
+        tags_placeholder: "Внесете ги ознаките што сакате да ги користите, одделени со запирки (',')"
+        map_location: "Локација на мапата"
+        map_location_instructions: "Одете на мапата до локацијата и поставете го маркерот."
+        map_remove_marker: "Отстранете го маркерот од мапата"
+      index:
+        title: "Партиципативно буџетирање"
+        unfeasible: "Неостварливи инвестициски проекти"
+        unfeasible_text: "Инвестициите мора да исполнуваат голем број критериуми (законитост, конкретност, да не ја надминуваат границата на буџетот) за да бидат прогласени за остварливи и да стигнат до фаза на конечно гласање. Сите инвестиции кои не ги исполнуваат овие критериуми се означени како неостварливи и објавени во следната листа, заедно со нејзиниот извештај за неостварливост."
+        by_heading: "Инвестициски проекти со опфат: %{heading}"
+        sidebar:
+          my_ballot: Моето гласачко ливче
+          voted_info:
+            knapsack:
+              one: "<strong>Вие гласавте за еден предлог со вредност од %{amount_spent}</strong>"
+              other: "<strong>Вие гласавте %{count} предлози со вредност на %{amount_spent}</strong>"
+            approval:
+              one: "<strong>Вие гласавте за еден предлог</strong>"
+              other: "<strong>Вие гласавте %{count} предлози</strong>"
+          change_vote_info:
+            knapsack: "Може да %{link} во секое време до %{phase_end_date}. Не е потребно да ги потрошите сите пари на располагање."
+            approval: "Може да %{link} во секое време до %{phase_end_date}."
+          change_vote_link: "сменете го вашиот глас"
+          different_heading_assigned: "Имате активни гласови во друг наслов: %{heading_link}"
+          change_ballot: "Ако се премислите, можете да ги отстраните вашите гласови во %{check_ballot} и да започнете повторно."
+          check_ballot_link: "Проверете го мојот глас"
+          zero: "Не сте гласале ниту еден инвестициски проект во оваа група."
+          verified_only: "За да креирате нова буџетска инвестиција %{verify}."
+          not_logged_in: "За да креирате нова буџетска инвестиција, мора %{sign_in} или %{sign_up}."
+          create: Направете буџетска инвестиција
+        search_form:
+          button: Пребарување
+          placeholder: Пребарувајте инвестициски проекти...
+          title: Пребарување
+        filter: Филтрирање на проекти по
+        filters:
+          selected: "Избрани"
+          unfeasible: "Неизводливо"
+          unselected: Не е избран за конечно гласање
+          winners: "Победници"
+          not_unfeasible: Активен
+        orders:
+          random: случаен
+          confidence_score: највисоко оценет
+          price: по цена
+      share:
+        message: Јас го создадов инвестицискиот проект %{title} во %{handle}. Создадете и вие еден инвестициски проект!
+      show:
+        author_deleted: Избришан корисник
+        price_explanation: Објаснување на цена
+        share: Сподели
+        title: Проекти за инвестирање
+        votes: Гласање
+        supports: Поддршки
+        price: Цена
+        comments_tab: Коментари
+        author: Автор
+        project_unfeasible: "Овој инвестициски проект<strong>е означен како неизводлив</strong>и нема да оди во фаза на гласање."
+        project_selected: "Овој инвестициски проект <strong>е избран</strong> за фаза на гласање."
+        project_winner: "Победнички инвестициски проект"
+        project_not_selected: "Овој инвестициски проект <strong>не е избран</strong> за фазата на гласање."
+        see_price_explanation: Погледнете го објаснувањето за цената
+        unfeasibility_explanation: Објаснување за неостварливост
+        code: 'Шифра на инвестициски проект: <strong>%{code}</strong>'
+        location: 'Локација: <strong>%{location}</strong>'
+        organization_name: 'Предложен во име на: <strong>%{name}</strong>'
+        milestones_tab: Пресвртници
+        project_unfeasible: Овој инвестициски проект <strong>е означен како неизводлив</strong> и нема да оди во фаза на гласање.
+        project_selected: Овој инвестициски проект <strong>е избран</strong>
+          за фазата на гласање.
+        project_winner: Победнички инвестициски проект
+        project_not_selected: Овој инвестициски проект <strong>не е избран</strong>
+          за фазата на гласање.
+      wrong_price_format: Само цели броеви
+      investment:
+        add_label: Vote %{investment}
+        already_added: Веќе го додадовте овој инвестициски проект
+        add: Гласајте
+        support_title: Поддржете го овој проект
+        supports:
+          one: 1 поддршка
+          other: "%{count} Поддршки"
+          zero: Нема поддршка
+      header:
+        check_ballot: Поднесете го моето гласачко ливче
+        different_heading_assigned: 'Имате активни гласови во друг наслов: %{heading_link}'
+        change_ballot: Ако се предомислите, можете да ги отстраните вашите гласови %{check_ballot}
+          и да почнете повторно.
+        check_ballot_link: Поднесете го моето гласачко ливче
+        price: Вкупен буџет
+      votes:
+        support: "Поддршка"
+        already_supported: Веќе го поддржавте овој инвестициски проект. Споделете го!
+        confirm_group:
+          one: 'Може да поддржувате инвестиции само во %{count} област. Ако продолжите, 
+	          не можете да го промените изборот на вашата област. Дали сте сигурни?'
+          other: 'Може да поддржувате инвестиции само во %{count} области. Ако продолжите, 
+	          не можете да го промените изборот на вашата област. Дали сте сигурни?'
+        remove_support: Повлечете ја вашата поддршка
+        remove_support_label: Повлечете ја вашата поддршка за %{investment}
+        support_label: Поддршка %{investment}
+    investments_list:
+      investment:
+        price: "Цена"
+        read_more: "Прочитај повеќе"
+        supports: "Поддршки"
+      see_all: "Видете ги сите инвестиции"
+      title: "Список на инвестиции"
+    show:
+      see_results: Види резултати
+    supports_info:
+      different: Може да поддржувате онолку различни проекти колку што сакате.
+      next: Поддржете ги проектите што би сакале да се движат во следната фаза.
+      scrolling: Продолжете надолу за да ги видите сите идеи
+      share: 'Можете да ги споделите проектите кои сте ги поддржале преку социјалните мрежи 
+	      и да привлечете повеќе внимание и поддршка кон нив!'
+      supported:
+        one: 'Досега сте поддржувале <strong>1 проект</strong>.'
+        other: 'Досега сте поддржувале <strong>%{count} проекти</strong>.'
+      supported_not_logged_in: 'Најавете се за да започнете <strong>поддршка на проекти</strong>.'
+      time: 'Има уште време до %{phase_end_date} за поддршка на проекти.'
+      title: 'Време е <strong>support</strong> проекти!'
+    results:
+      link: Резултати
+      ballot_lines_count: Гласање
+      price: Цена
+      page_title: '%{budget} - Резултати'
+      heading: Резултати од партиципативен буџет
+      heading_selection_title: По област
+      hide_discarded_link: Скријте ги отфрлените
+      show_all_link: Покажете ги сите
+      amount_available: Достапен буџет
+      accepted: 'Прифатена инвестиција: '
+      discarded: 'Отфрлена инвестиција: '
+      incompatibles: Некомпатибилни
+      investment_title: Наслов на проектот
+      investment_proyects: Список на сите инвестициски проекти
+      unfeasible_investment_proyects: Список на сите неостварливи инвестициски проекти
+      not_selected_investment_proyects: Список на сите инвестициски проекти кои не се избрани за гласање
+    executions:
+      link: Пресвртници
+      page_title: '%{budget} - Пресвртници'
+      heading: Партиципативни буџетски пресвртници
+      heading_selection_title: По област
+      no_winner_investments: Нема победнички инвестиции во оваа држава (состојба?!) 	
+      filters:
+        status:
+          label: Тековната состојба на проектот
+          all: Сите (%{count})
+        milestone_tag:
+          label: Ознака за пресвртница
+          all: Сите (%{count})
+    phases:
+      errors:
+        dates_range_invalid: Датумот на почеток не може да биде еднаков или подоцна од датумот на завршување
+        prev_phase_dates_invalid: Датумот на започнување мора да биде подоцна од датумот на започнување на претходната овозможена фаза (%{phase_name})
+        next_phase_dates_invalid: Датумот на завршување мора да биде порано од крајниот датум на следната овозможена фаза (%{phase_name})

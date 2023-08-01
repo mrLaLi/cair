@@ -1,0 +1,1770 @@
+mk:
+  admin:
+    header:
+      title: Администрација
+    actions:
+      actions: Акции
+      edit: Измени
+      block_author: Блокирајте автор
+      confirm_action: Дали сте сигурни? %{action} "%{name}"
+      confirm_delete: Дали сте сигурни? Ова дејство ќе избрише "%{name}" и не може да се врати
+      confirm_hide: Потврдете ја умереноста
+      delete: Избришете
+      hide: Сокријте
+      label: '%{action} %{name}'
+      restore: Вратете
+      mark_featured: Избрана
+      unmark_featured: Отстранете ја ознаката избрана
+      configure: Конфигурирајте
+    officing_booth:
+      title: Вие го официјализирате штандот кој се наоѓа на %{booth}. Ако ова не е точно,
+        не продолжувајте и јавете се на телефонскиот број за помош. Ви благодариме.
+    banners:
+      index:
+        title: Банери
+        create: Создавајте банер
+        filters:
+          all: Сите
+          with_active: Активно
+          with_inactive: Неактивен
+        preview: Преглед
+      banner:
+        sections_label: Секции каде што ќе се појави
+        sections:
+          homepage: Почетна страница
+          debates: Дебати
+          proposals: Предлози
+          help_page: Страница за помош
+          budgets: Партиципативно буџетирање
+          sdg: СДГ
+      create:
+        notice: Банерот е успешно создаден
+      destroy:
+        notice: Банерот е успешно избришан
+      edit:
+        editing: Уредете банер
+        form:
+          submit_button: Зачувај промени
+      new:
+        creating: Создадете банер
+      update:
+        notice: Банерот е успешно ажуриран
+    activity:
+      show:
+        content: Содржина
+        action: Акција
+        actions:
+          block: Блокирана
+          hide: Скриена
+          restore: Вратена
+        by: Модерирана од
+        filter: Прикажете
+        filters:
+          all: Сите
+          on_comments: Коментари
+          on_debates: Дебати
+          on_proposals: Предлози
+          on_users: Корисници
+          on_system_emails: системски имејли
+        title: Активност на модераторот
+        no_activity: Нема активност на модератори.
+        type: Тип
+    budgets:
+      actions:
+        ballots: Создадете штандови
+        confirm:
+          ballots: Дали си сигурен? Оваа акција е потребна само ако сакате да користите физички штандови за време на последната фаза на гласање. Граѓаните сепак ќе можат да гласаат преку веб со или без физички штандови.
+          destroy: Дали си сигурни? Ова ќе го избрише буџетот и сите негови поврзани групи и наслови. Ова дејство не може да се врати.
+        descriptions:
+          ballots: Ова ќе ви овозможи да управувате со физичките гласачки ливчиња. Користете ја оваа опција само ако сакате да користите физички штандови за собирање гласачки ливчиња за време на последната фаза на гласање.
+          calculate_winners: По пресметувањето на резултатите, само администраторите ќе можат да имаат пристапат до нив. Тие ќе бидат јавни кога проектот ќе стигне до
+            "%{phase}" фаза <strong>доколку е овозможена опцијата „Прикажи резултати“.</strong>
+            при уредување на буџетот.
+          destroy: Ова ќе го избрише буџетот и сите негови поврзани групи и наслови.
+            Ова дејство не може да се врати.
+        edit: Уредете го буџетот
+        preview: Преглед
+        preview_results: Преглед на резултати
+      index:
+        title: Партиципативни буџети
+        filter: Филтрирај
+        new_link: Создадете нов буџет
+        table_completed: Завршено
+        table_duration: Времетраење
+        table_phase_progress: (%{current_phase_number}/%{total_phases})
+        type_multiple: Повеќе наслови
+        type_pending: 'Во очекување: Сè уште нема наслови'
+        type_single: Единечен наслов
+        admin_ballots: Гласачки ливчиња
+        no_budgets: Нема буџети.
+        filters:
+          all: Сите
+          open: Отворено
+          finished: Завршено
+        budget_investments: Проекти за инвестирање
+        table_budget_type: "Тип"
+        table_draft: "Нацрт текст"
+        table_name: Име
+        table_phase: Фаза
+      create:
+        notice: Успешно создаден нов партиципативен буџет!
+      update:
+        notice: Партиципативниот буџет е успешно ажуриран
+      publish:
+        notice: Партиципативниот буџет е успешно објавен
+      edit:
+        phase: Фаза
+        actions: Акции
+        active: Активно
+        title: Уредете го партиципативниот буџет
+        drafting: Овој партиципативен буџет е во режим на нацрт, само администраторите можат да го видат на јавната страница. Откако ќе се објави, не може повторно да се смени во режим на нацрт.
+        publish: Објавете буџет
+        delete: Избришете буџет
+        phases_caption: Фази
+        phases_table_help_text: Конфигурацијата на овие фази се користи само за информативни цели. Неговата функција е да ги дефинира информациите за фазите прикажани на јавната страница на партиципативниот буџет.
+        duration: Времетраење
+        enabled: Овозможено
+        enable_phase: Овозможете %{phase} фаза
+        blank_dates: Датумите се празни
+        administrators:
+          zero: Изберете администратори
+          one: 1 избран администратор
+          other: '%{count} избрани администратори'
+        valuators:
+          zero: Изберете вреднувачи
+          one: 1 избран вреднувач
+          other: '%{count} избрани вреднувачи'
+        empty_administrators: Нема администратори
+        empty_valuators: Нема вреднувачи
+        name_description: Ова е името на партиципативниот буџет што се користи на заглавието и картичките секогаш кога е активен
+        image_description: Ако сликата е поставена, таа ќе се користи како банер на врвот на овој партиципативен буџет, во спротивно ќе се користи стандардната боја за буџетите.
+        main_call_to_action: Главен повик за акција (изборно)
+        main_call_to_action_description: Овој линк ќе се појави на главниот банер на овој партиципативен буџет и го охрабрува вашиот корисник да изврши специфично дејство како што е создавање предлог, гласање за постоечките или да дознае повеќе за процесот.
+        info:
+          budget_settings: Општи поставки за партиципативен буџет
+          staff_settings: Администратори и вреднувачи доделени на буџетот
+        hide_money: Сокријте пари
+        hide_money_help_text: Ако оваа опција е означена, сите полиња што ја покажуваат сумата на пари ќе бидат скриени во текот на процесот.
+      destroy:
+        success_notice: Буџетот е успешно избришан
+        unable_notice: не можете да избришете буџет што има поврзани инвестиции
+        unable_notice_polls: Не можете да избришете буџет што има поврзана анкета
+      new:
+        title_multiple: Нов буџет со повеќе наслови
+        title_single: Нов буџет со единечен наслов 
+      help:
+        budgets: Партиципативните буџети им овозможуваат на граѓаните да предложат и директно да одлучат како да потрошат дел од буџетот, со мониторинг и ригорозна евалуација на предлозите од страна на институцијата.
+        groups:
+          multiple: Групите се наменети да организираат наслови. Откако ќе се создаде група и ќе содржи наслови, можно е да се одреди во колку наслови корисникот може да гласа по група.
+          single: Групите се наменети да организираат наслови, бидејќи овој буџет ќе содржи само еден наслов, истото име може да се користи бидејќи нема да се појави никаде. Можете само да продолжите со следниот чекор.
+        headings:
+          multiple: Насловите се наменети да ги поделат парите од партиципативниот буџет. Овде можете да додадете наслови за оваа група и да ја доделите сумата на пари што ќе се користи за секој наслов.
+          single: Насловите се наменети да ги поделат парите од партиципативниот буџет. Бидејќи овој буџет ќе содржи само еден наслов, ова е местото каде што ги утврдувате парите што ќе се потрошат во овој партиципативен буџет.
+        phases: Партиципативните буџети имаат различни фази. Овде можете да овозможите или оневозможите фази и исто така да ја приспособите секоја поединечна фаза. Конфигурацијата на овие фази се користи само за информативни цели и ќе биде прикажана на јавната страница на партиципативниот буџет.
+      show:
+        add_group: Додадете група
+        add_heading: Додадете наслов
+        groups_and_headings: Групи на наслови
+        headings_caption: Наслови во %{group}
+      winners:
+        calculate: Пресметајте ги победничките инвестиции
+        calculated: Се пресметуваат победниците, ова може да потрае една минута.
+        recalculate: Повторно пресметајте ги победничките инвестиции
+    budget_groups:
+      name: "Име"
+      headings_name: Наслови
+      headings_manage: Наслови
+      no_groups: Нема групи.
+      amount:
+        one: Има 1 група
+        other: Има %{count} групи
+      create:
+        notice: Групата е успешно создадена!
+      update:
+        notice: Групата е успешно ажурирана
+      destroy:
+        success_notice: Групата е успешно избришана
+        unable_notice: Не можете да избришете група која има поврзани наслови
+      form:
+        create: Создадете нова група
+        edit: Уредете група
+        max_votable_headings_info: Се однесува само на фазата на избор на проекти. За време на фазата на гласање проекти, корисниците можат да гласаат само во еден наслов по група.
+        submit: Зачувајте група
+      index:
+        new_button: Додадете нова група
+    budget_headings:
+      no_headings: Нема наслови во <strong>%{group}</strong> група.
+      create:
+        notice: Насловот е успешно создаден!
+      update:
+        notice: Насловот е успешно ажуриран
+      destroy:
+        success_notice: Насловот е успешно избришан
+        unable_notice: Не можете да избришете наслов што има поврзани инвестиции
+      form:
+        max_ballot_lines_info: Максимален број на проекти за кои корисникот може да гласа за овој наслов за време на фазата „Гласање проекти“. Само за буџети кои користат гласање за одобрување.
+        population_info: Полето популација на буџетскиот наслов се користи за статистички цели на крајот од буџетот за да се прикаже за секој наслов што претставува област со процент на население кое гласало. Полето е изборно, па можете да го оставите празно ако не може да се примени.
+        coordinates_info: Доколку се обезбедени географска ширина и должина, страницата за инвестиции за овој наслов ќе содржи карта. Оваа карта ќе биде центрирана користејќи ги тие координати.
+        content_blocks_info: Ако е штиклирано дозволи блок за содржина, ќе можете да креирате приспособена содржина поврзана со овој наслов од делот Поставки > Блокови со приспособена содржина. Оваа содржина ќе се појави на страницата за инвестиции за овој наслов.
+        create: Создадете нов наслов
+        edit: Уредете наслов
+        submit: Зачувајте наслов
+      group_switcher:
+        currently_showing: Се прикажуваат наслови од <strong>%{group}</strong> група.
+        different_group: Управувајте со наслови од друга група
+        the_other_group: Управувајте со наслови од %{group} група.
+      index:
+        back: Вратете се кај групите
+        new_button: Додадете нов наслов
+        title: '%{budget} / %{group} наслови'
+    budget_phases:
+      edit:
+        save_changes: Зачувај промени
+        title: Уредете фаза
+        dates_help_text: Само за информативни цели
+        description_help_text: Овој текст ќе се појави во насловот кога фазата е активна
+        duration: Времетраење на фазата
+        duration_description: Овие полиња се користат само за информативни цели
+          и <strong>не активирајте автоматско ажурирање на активната фаза.</strong>
+          За да го ажурирате, уредете го буџетот и изберете ја активната фаза.
+        enabled_help_text: Оваа фаза ќе биде јавна во временската рамка на фазите на буџетот.
+        image_description: Ако се постави слика, таа ќе се прикаже веднаш до описот на оваа фаза.
+        main_call_to_action: Главен повик за акција (изборно)
+        main_call_to_action_description: Оваа врска ќе се појави на главниот банер на овој партиципативен буџет кога оваа фаза е овозможена и го охрабрува вашиот корисник да изврши специфично дејство како што е создавање предлог, гласање за постоечките или да дознае повеќе за процесот.
+        name_help_text: Ова е насловот на фазата што корисниците ќе ја читаат на заглавието секогаш кога оваа фаза е активна.
+      index:
+        title: '%{budget} фази'
+    budget_investments:
+      index:
+        administrator_filter_all: Сите администратори
+        valuator_filter_all: Сите вреднувачи
+        tags_filter_all: Сите ознаки
+        advanced_filters: Напредни филтри
+        placeholder: Пребарувајте проекти
+        heading_filter_all: Сите наслови
+        filters:
+          all: Сите
+          under_valuation: Подлежи на вреднување
+          valuation_finished: Завршено вреднување
+          feasible: Изводливо
+          selected: Селектирано
+          unfeasible: Неизводливо
+          without_admin: Без назначен админ
+          without_valuator: Без назначен вреднувач
+          undecided: Неопределен
+          min_total_supports: Минимална поддршка
+          max_total_supports: Максимална поддршка
+          winners: Победници
+          one_filter: 'Current applied filters: <b><em>%{filter}</em></b>'
+          two_filters: 'Current applied filters: <b><em>%{filter}, %{advanced_filters}</em></b>'
+        download_current_selection: Преземете го тековниот избор
+        columns: Колони
+        assigned_admin: Назначен администратор
+        no_admin_assigned: Нема назначен админ
+        no_valuators_assigned: Нема назначени вреднувачи
+        buttons:
+          filter: Филтрирај
+        no_budget_investments: "Нема инвестициски проекти."
+        title: Проекти за инвестирање
+        feasibility:
+          feasible: "Изводливо"
+          unfeasible: "Неизводливо"
+          undecided: Неопределен
+        selected: "Селектирано"
+        select: Изберете
+        list:
+          id: ИД
+          title: Наслов
+          admin: Администратор
+          valuator: Вреднувач
+          geozone: Опсег на операцијата
+          feasibility: Изводливост
+          selected: Селектирано
+          price: Цена
+          author: Автор
+          supports: Поддршка
+          valuation_group: Група за вреднување
+          valuation_finished: Val. Fin.
+          visible_to_valuators: Покажете им го на вреднувачите
+          author_username: Корисничко име на авторот
+          incompatible: Некомпатибилно
+        see_results: "Види резултати"
+        cannot_calculate_winners: Буџетот мора да остане во фаза "%{phase}" со цел да се пресметаат победничките проекти
+        milestone_tags_filter_all: Сите ознаки за пресвртници
+      show:
+        assigned_valuators: Одредени вреднувачи
+        edit: Измени
+        heading: Наслов
+        dossier: Досие
+        edit_dossier: Измени досие
+        tags: Тагови
+        undefined: Недефинирано
+        preview: Преглед на инвестицијата
+        assigned_admin: Назначен администратор
+        classification: Класификација
+        info: '%{budget_name} - Group: %{group_name} - Investment project %{id}'
+        edit_classification: Уредете класификација
+        by: Од
+        sent: Испратено
+        group: Група
+        compatibility:
+          title: Компатибилност
+          'true': Некомпатибилен
+          'false': Компатибилен
+        selection:
+          title: Избор
+        winner:
+          title: Победник
+          'true': 'Да'
+          'false': 'Не'
+        valuator_groups: Групи на вреднувачи
+      edit:
+        assigned_valuators: Вреднувач
+        submit_button: Ажурирање
+        undefined: Недефинирано
+    budgets_wizard:
+      creation_timeline:
+        budget: Буџет
+        groups: Групи
+        headings: Наслови
+        phases: Фази
+      budgets:
+        continue: Продолжете кон групите
+      groups:
+        back: Вратете се зсе на уредување на буџетот
+        continue: Продолжете кон насловите
+      headings:
+        continue: Продолжете кон фазите
+        single:
+          back: Вратете се на уредување на групата
+      heading_mode:
+        multiple:
+          description: Создадете процес со повеќе групи, области или теми. Имате нешто како неколку вреќи со пари. На пример, 25.000€ за „Северен округ“, 30.000€ за „Централен округ“, 28.000€ за „Јужен округ“ и целиот град. Или за неколку теми како спорт, култура или здравје.
+          link: Создадете буџет за повеќе наслови
+          title: <strong>Multiple headings</strong> буџет
+        single:
+          description: Направете процес со група, област или тема. Имате нешто како вреќа со пари. На пример, 25.000€ за област или 10.000€ за култура.
+          link: Создадете буџет со еден наслов
+          title: <strong>Single heading</strong> буџет
+        title: Партиципативен тип на буџет
+      phases:
+        continue: Крај
+        multiple:
+          back: Вратете се на насловите
+        single:
+          back: Вратете се на уредување на насловот
+    milestones:
+      index:
+        table_id: "ИД"
+        table_title: "Наслов"
+        table_description: "Опис"
+        table_status: Статус
+        table_actions: "Акции"
+        no_milestones: "Нема дефинирано цели"
+        image: "Слика"
+        documents: "Документи"
+        table_publication_date: Датум на објавување
+        show_image: Прикажете слика
+        milestone: Пресвртница
+        new_milestone: Создадете нова пресвртница
+        milestone_tags: Ознаки за пресвртница
+      form:
+        admin_statuses: Управувајте со статусите
+        no_statuses_defined: Сè уште нема дефинирани статуси
+      new:
+        creating: Создадете пресвртница
+      edit:
+        title: Уредете пресвртница
+      create:
+        notice: Пресвртницата е успешно создадена!
+      update:
+        notice: Пресвртницата е успешно ажурирана
+      delete:
+        notice: Пресвртницата е успешно избришана
+    statuses:
+      index:
+        table_name: Име
+        table_description: Опис
+        table_actions: Акции
+        title: Статуси на пресвртници
+        empty_statuses: Нема создадени статуси за пресвртници
+        new_status: Создадете статус на нова пресвртница
+      edit:
+        title: Уредете статус на пресвртница
+      update:
+        notice: Статусот на пресвртница е успешно ажуриран
+      new:
+        title: Создадете статус на пресвртница
+      create:
+        notice: Статусот на пресвртницата е успешно создаден
+      delete:
+        notice: Статусот на пресвртницата е успешно избришан
+    progress_bars:
+      manage: Управувајте со лентите за напредок
+      index:
+        title: "Стапка на прогрес"
+        table_id: "ИД"
+        table_kind: "Тип"
+        table_title: "Наслов"
+        table_percentage: "Моментален прогрес"
+        no_progress_bars: Нема ленти за напредок
+        new_progress_bar: Создадете нова лента за напредок
+        primary: Примарна лента за напредок
+      new:
+        creating: Создадете лента за напредок
+      edit:
+        title:
+          primary: Уредете ја основната лента за напредок
+          secondary: Уредете ја лентата за напредок %{title}
+      create:
+        notice: Лентата за напредок е успешно создадена!
+      update:
+        notice: Лентата за напредок е успешно ажурирана!
+      delete:
+        notice: Лентата за напредок е успешно избришана!
+    comments:
+      index:
+        id: "ИД"
+        content: "Содржина"
+        author: "Автор"
+        commentable_type: "Тип"
+        title: Коментари
+        table_link: "Линк"
+        no_comments: Нема коментари.
+    hidden_comments:
+      index:
+        filter: Филтрирај
+        filters:
+          all: Сите
+          with_confirmed_hide: Потврдено
+          without_confirmed_hide: Во исчекување
+        hidden_debate: Скриена дебата
+        hidden_proposal: Скриен предлог
+        title: Скриени коментари
+        no_hidden_comments: Нема скриени коментари.
+    dashboard:
+      index:
+        back: Вратете се во %{org}
+        title: Администрација
+        description: Добредојдовте во %{org} административниот панел.
+      actions:
+        index:
+          action_title: Наслов
+          action_type: Тип
+          action_active: Активно
+          order: Ред
+          default:
+            email: Е-пошта
+            polls: Анкети
+          description: Кога корисниците создаваат предлози, тие можат да пристапат до контролната табла на нивниот предлог, каде што можете да предложите ресурси и препораки за да добиете поддршка за нивната идеја.
+          create: Создадете ресурс или дејство
+          active: 'Да'
+          inactive: 'Не'
+          title: Ресурси и дејства
+          required_supports: Потребна поддршка
+          day_offset: Потребни денови
+          published_proposal: Објавен предлог
+          default:
+            poster: Постер
+        new:
+          creating: Ново дејство за контролната табла со предлози
+          back: Назад кон листата
+        create:
+          notice: Дејството е успешно создадено
+        edit:
+          editing: Уредете го дејството за контролната табла со предлози
+          back: Назад кон листата
+        delete:
+          success: Дејството е успешно создадено
+        form:
+          submit_button: Зачувај
+          help_text: Внесете 0 за да не се земе во предвид оваа вредност
+          published_proposal_help_text: Обележете го ова поле за да го креирате дејството само за објавените предлози
+      administrator_tasks:
+        index:
+          source: Извор
+          filter: Филтрирај
+          filters:
+            pending: Во исчекување
+          description: Ресурсите објавени во контролната табла со предлози може да вклучуваат копче што треба да се побара од администраторите. Барањата на корисниците се прикажани подолу.
+          title: Потребните ресурси
+          solve: Решавајте
+          no_records: Не се бараат ресурси
+          resource: Баран ресурс
+          filters:
+            done: Решено
+        edit:
+          back: Назад кон списокот со задачи во чекање
+          solving: Решете ја задачата во чекање
+        form:
+          proposal: Предлог
+          solve: Означете го како решено
+          request: Баран ресурс
+        update:
+          success: Задачата е означена како решена.
+    debates:
+      index:
+        id: ИД
+        author: Автор
+        title: Дебати
+        no_debates: Нема дебати.
+    hidden_debates:
+      index:
+        filter: Филтрирај
+        filters:
+          all: Сите
+          without_confirmed_hide: Во исчекување
+          with_confirmed_hide: Потврдено
+        title: Скриени дебати
+        no_hidden_debates: Нема скриени дебати.
+    documents:
+      new:
+        title: Прикачете документ
+        submit_button: Прикачете
+      index:
+        new_link: "Додади нов документ"
+        title: "Документи"
+        no_documents: Нема документи.
+        format: Формат
+        size: Големина
+        url: URL
+      create:
+        success_notice: Документот е успешно прикачен
+        unable_notice: Неважечки документ
+      destroy:
+        success_notice: Документот е успешно избришан
+    hidden_users:
+      index:
+        filter: Филтрирај
+        filters:
+          all: Сите
+          without_confirmed_hide: Во исчекување
+          with_confirmed_hide: Потврдено
+        user: Корисник
+        title: Скриени корисници
+        no_hidden_users: Нема скриени корисници.
+      show:
+        email: 'Email:'
+        hidden_at: 'Hidden at:'
+        registered_at: 'Registered at:'
+        title: Активност на корисникот (%{user})
+    hidden_budget_investments:
+      index:
+        filter: Филтрирај
+        filters:
+          all: Сите
+          without_confirmed_hide: Во исчекување
+          with_confirmed_hide: Потврдено
+        title: Скриени буџетски инвестиции
+        no_hidden_budget_investments: Нема скриени буџетски инвестиции
+    legislation:
+      processes:
+        create:
+          notice: Процесот е успешно креиран. <a href="%{link}">Click to visit</a>
+          error: Процесот не може да се создаде
+        update:
+          notice: Процесот е успешно ажуриран. <a href="%{link}">Click to visit</a>
+          error: Процесот не може да се ажурира
+        destroy:
+          notice: Процесот е успешно избришан
+        edit:
+          back: Назад
+          submit_button: Зачувај промени
+        form:
+          process: Процес
+          enabled: Овозможено
+          debate_phase: Фаза на дебата
+          draft_phase: Фаза на нацрт
+          draft_phase_description: Ако оваа фаза е активна, процесот нема да биде наведен на индексот на процеси. Дозволете преглед на процесот и создавање на содржина пред почетокот.
+          allegations_phase: Фаза на коментари
+          proposals_phase: Фаза на предлози
+          use_markdown: Користете Markdown за да го форматирате текстот
+          homepage_description: Овде можете да ја објасните содржината на процесот
+          banner_title: Бои на насловот
+        index:
+          title: Колаборативна легислатива
+          create: Нов процес
+          filters:
+            active: Активно
+            all: Сите
+        new:
+          title: Создадете нов заеднички законски процес
+          submit_button: Создадете процес
+          back: Назад
+        proposals:
+          orders:
+            id: Подредете по ИД
+            title: Подредете по наслов
+            supports: Подредете по вкупна поддршка
+        process:
+          title: Процес
+          comments: Коментари
+          status: Статус
+          start_date: Почетен датум
+          end_date: Краен датум
+          status_open: Отворено
+          status_closed: Затворен
+          status_planned: Планиран
+        subnav:
+          homepage: Почетна страница
+          questions: Дебата
+          proposals: Предлози
+          milestones: Следи
+          info: Информации
+          draft_versions: Изготвување
+      homepage:
+        edit:
+          title: Конфигурирајте ја почетната страница на процесот
+      proposals:
+        index:
+          title: Наслов
+          back: Назад
+          id: Id
+          supports: Вкупна поддршка
+        form:
+          custom_categories: Категории
+          custom_categories_description: Категории што корисниците можат да ги изберат за создавање на предлогот. Максимум 160 знаци.
+          custom_categories_placeholder: Внесете ги ознаките што сакате да ги користите, одделени со запирки (,) и меѓу наводници ("")
+      draft_versions:
+        create:
+          notice: Нацртот е успешно создаден. <a href="%{link}">Click to visit</a>
+          error: Нацртот не може да се создаде
+        update:
+          notice: Нацртот е успешно ажуриран. <a href="%{link}">Click to visit</a>
+          error: Нацртот не може да се ажурира
+        destroy:
+          notice: Нацртот е успешно избришан
+        edit:
+          back: Назад
+          submit_button: Зачувај промени
+          warning: Го уредивте текстот, не заборавајте да кликнете на Зачувај за трајно да ги зачувате промените.
+          markdown_changes_message: Го уредивте текстот без да го зачувате. Дали потврдувате да ја напуштите страницата?
+        form:
+          title: Уредување <span class="strong">%{draft_version_title}</span> од процесот <span class="strong">%{process_title}</span>
+          launch_text_editor: Стартувајте го уредувачот на текст
+          close_text_editor: Затворете го уредувачот на текст
+          use_markdown: Користете Markdown за да го форматирате текстот
+          hints:
+            final_version: Оваа верзија ќе биде објавена како конечен резултат за овој процес. Коментарите нема да бидат дозволени во оваа верзија.
+            status:
+              draft: Можете да прегледате како администратор, никој друг не може да го види
+              published: Видливи за секого
+          changelog_placeholder: Додадете ги главните промени од претходната верзија
+        index:
+          title: Нацрт верзија
+          create: Создадете верзија
+          delete: Избришете
+          preview: Прегледајте
+        new:
+          back: Назад
+          title: Создадете нова верзија
+          submit_button: Создадете верзија
+        table:
+          title: Наслов
+          created_at: Креирано на
+          comments: Коментари
+          final_version: Конечна верзија
+          status: Статус
+      questions:
+        create:
+          notice: Прашањето е успешно создадено. <a href="%{link}">Click to visit</a>
+          error: Прашањето не може да се создаде
+        update:
+          notice: Прашањето е успешно ажурирано. <a href="%{link}">Click to visit</a>
+          error: Прашањето не може да се ажурира
+        destroy:
+          notice: Прашањето е успешно избришано
+        edit:
+          back: Назад
+          submit_button: Зачувај промени
+          title: Уредувајте “%{question_title}”
+        form:
+          add_option: Додајте опција
+          value_placeholder: Додадете одговор од затворен тип
+          question_options: Можни одговори (незадолжително, стандардно одговори од отворен тип)
+        index:
+          title: Прашања поврзани со овој процес
+          create: Создадете прашање
+          delete: Избришете
+          back: Назад
+        new:
+          back: Назад
+          title: Создадете ново прашање
+          submit_button: Создадете прашање
+        table:
+          title: Наслов
+          question_options: Опции за прашање
+          answers_count: Број на одговори
+          comments_count: Број на коментари
+        question_option_fields:
+          remove_option: Отстранете опција
+      milestones:
+        index:
+          title: Следи
+    managers:
+      index:
+        title: Менаџер
+        no_managers: Нема менаџери.
+      manager:
+        add: Додадете
+      search:
+        title: 'Managers: Корисничко пребарување'
+    sdg_managers:
+      index:
+        no_sdg_managers: Нема корисници.
+    sdg/managers:
+      sdg/manager:
+        add: Додадете
+    menu:
+      proposals: Предлози
+      budgets: Партиципативни буџети
+      administrators: Администратори
+      managers: Менаџер
+      moderators: Модератори
+      newsletters: Билтен
+      admin_notifications: Нотификации
+      valuators: Вреднувач
+      polls: Анкети
+      organizations: Органзација
+      site_customization:
+        homepage: Почетна страница
+        pages: Стилизирана страница
+        images: Стилизирана слика
+        content_blocks: Стилизиран блок на содржини
+        information_texts_menu:
+          debates: "Дебати"
+          community: "Заедница"
+          proposals: "Предлози"
+          polls: "Анкети"
+          welcome: "Добредојдовте"
+        buttons:
+          save: "Зачувај"
+      users: Корисници
+      debates: "Дебати"
+      comments: "Коментари"
+      activity: Активност на модераторот
+      admin: Администраторско мени
+      banner: Управувајте со банери
+      proposals_topics: Теми за предлози
+      geozones: Управувајте со геозоните
+      hidden_comments: Скриени коментари
+      hidden_debates: Скриени дебати
+      hidden_proposals: Скриени предлози
+      hidden_budget_investments: Скриени буџетски инвестиции
+      hidden_proposal_notifications: Скриени известувања за предлози
+      hidden_users: Скриени корисници
+      sdg_managers: Менаџери на СДГ
+      messaging_users: Пораки до корисниците
+      system_emails: Системски е-пошти
+      emails_download: Преземање на е-пошта
+      poll_officers: Службеници за гласање
+      poll_booths: Локација на штандови
+      poll_booth_assignments: Задачи на штандови
+      poll_shifts: Управувајте со смените
+      officials: Официјални лица
+      settings: Глобални поставки
+      stats: Статистика
+      signature_sheets: Листови со потписи
+      site_customization:
+        documents: Прилагодени документи
+        information_texts: Прилагодени информативни текстови
+        information_texts_menu:
+          basic: Основно прилагодување
+          layouts: Распореди
+          machine_learning: ВИ / Машинско учење
+          mailers: Е-пошта
+          management: Управување
+        buttons:
+          content_block:
+            update: Ажурирајте го блокот
+      title_moderated_content: Модерирана содржина
+      title_profiles: Профили
+      title_settings: Поставки
+      title_site_customization: Содржина на страницата
+      title_booths: Штандови за гласање
+      legislation: Законодавство за соработка
+      dashboard: Контролна табла со предлози
+      administrator_tasks: Побарани ресурси
+      dashboard_actions: Ресурси и дејства
+      local_census_records: Управувајте со локалниот попис
+      machine_learning: ВИ / Машинско учење
+    administrators:
+      index:
+        title: Администратори
+        id: ИД на администратор
+        no_administrators: Нема администратори.
+      administrator:
+        add: Додадете
+        restricted_removal: За жал, не можете да се отстраните од администраторите
+      search:
+        title: 'Администратори: Корисничко пребарување'
+      form:
+        edit_title: Уредете го администраторот
+        updated: Администраторот е успешно ажуриран
+    moderators:
+      index:
+        title: Модератори
+        no_moderators: нема модератори.
+      moderator:
+        add: Додадете
+      search:
+        title: 'Модератори: Корисничко пребарување'
+    segment_recipient:
+      administrators: Администратори
+      all_users: Сите корисници
+      all_proposal_authors: Автори на предлогот (вклучувајќи архивирани и повлечени)
+      proposal_authors: Автори на предлогот
+      investment_authors: Инвестициските автори во тековниот буџет
+      feasible_and_undecided_investment_authors: 'Автори на некаква инвестиција во тековниот буџет што не е во согласност со: [вреднувањето е завршено неизводливо]'
+      selected_investment_authors: Автори на избрани инвестиции во тековниот буџет
+      winner_investment_authors: Автори на победнички инвестиции во тековниот буџет
+      not_supported_on_current_budget: Корисници кои не поддржале инвестиции на тековниот буџет
+      invalid_recipients_segment: Корисничкиот сегмент на примачи е неважечки
+    newsletters:
+      create_success: Билтенот е успешно создаден
+      update_success: Newsletter updated ажуриран
+      send_success: Билтенот е успешно испратен
+      delete_success: Билтенот е успешно избришан
+      index:
+        title: Билтен
+        subject: Предмет
+        segment_recipient: Примачи
+        actions: Акции
+        draft: Нацрт текст
+        new_newsletter: Нов билтен
+        sent: Испратен
+        preview: Преглед
+        empty_newsletters: Нема билтени за прикажување
+      new:
+        title: Нов билтен
+        header_footer_help_text: Насловот и подножјето се исти за сите пораки, можете да ги менувате на <code>app/views/layouts/mailer_header</code> и
+          <code>app/views/layouts/mailer_footer</code>.<br>Можете да ја замените сликата на насловот на %{link}.
+        image_link: прилагодени слики
+      edit:
+        title: Уредете го билтенот
+      show:
+        title: Преглед на билтенот
+        affected_users: (%{n} засегнати корисници)
+        sent_emails:
+          one: Испратена е 1 е-пошта
+          other: '%{count} испратени е-пошти'
+        body_help_text: Вака корисниците ќе ја гледаат е-поштата.
+        send_alert: Дали сте сигурни дека сакате да го испратите овој билтен до %{n} корисници?
+        send: Испрати
+        sent_at: Испратено на
+        subject: Предмет
+        segment_recipient: Примачи
+        from: Електронска адреса која ќе се појави при испраќање на билтен
+        body: Содржина на електронска пошта
+    admin_notifications:
+      create_success: Известувањето е успешно создадено
+      update_success: Известувањето е успешно ажурирано
+      send_success: Известувањето е успешно испратено
+      delete_success: Известувањето е успешно избришано
+      index:
+        section_title: Нотификации
+        title: Наслов
+        segment_recipient: Примачи
+        actions: Акции
+        draft: Нацрт текст
+        new_notification: Ново известување
+        sent: Испратено
+        preview: Преглед
+        view: Погледнете
+        empty_notifications: Нема известувања за прикажување
+      new:
+        section_title: Ново известување
+        submit_button: Создадете известување
+      edit:
+        section_title: Уредете го известувањето
+        submit_button: Ажурирајте го известувањето
+      show:
+        sent_at: Испратено на
+        title: Наслов
+        body: Текст
+        link: Линк
+        segment_recipient: Примачи
+        section_title: Преглед на известување
+        send: Испратете известување
+        will_get_notified: (%{n} корисници ќе бидат известени)
+        got_notified: (%{n} корисници беа известени)
+        preview_guide: 'Вака корисниците ќе го видат известувањето:'
+        sent_guide: 'Вака корисниците го гледаат известувањето:'
+        send_alert: Дали сте сигурни дека сакате да го испратите ова известување до %{n} корисници?
+    system_emails:
+      comment:
+        title: "Коментар"
+      preview_pending:
+        action: Прегледот е на чекање
+        preview_of: Преглед на %{name}
+        pending_to_be_sent: Ова е содржината што чека да се испрати
+        moderate_pending: Испратете умерено известување
+        send_pending: Испраќањето е на чекање
+        send_pending_notification: Известувањата на чекање се успешно испратени
+      proposal_notification_digest:
+        title: Дигест за известување за предлогот
+        description: Ги собира сите известувања за предлози за корисник во една порака, за да избегне премногу пораки.
+        preview_detail: Корисниците ќе добиваат само известувања од предлозите што ги следат
+      budget_investment_created:
+        title: Создадена буџетска инвестиција
+        description: Испратено кога корисникот создава буџетска инвестиција.
+      budget_investment_selected:
+        title: Избрана буџетска инвестиција
+        description: Испратено до авторот кога е избрана неговата буџетска инвестиција.
+      budget_investment_unfeasible:
+        title: Буџетската инвестиција е неостварливи
+        description: Испратено до авторот кога неговата буџетска инвестиција е означена како неостварлива.
+      budget_investment_unselected:
+        title: Буџетската инвестиција не е избрана
+        description: Испратено до авторот кога неговата буџетска инвестиција не е избрана за фаза на гласање.
+      comment:
+        description: Испратено до авторот кога ќе добие коментар.
+      reply:
+        title: Одговор
+        description: Испратено до авторот на коментарите кога добива одговор.
+      direct_message_for_receiver:
+        title: Примач на приватна порака
+        description: Испратено до примачот на приватната порака.
+      direct_message_for_sender:
+        title: Испраќач на приватна порака
+        description: Испратено до испраќачот на приватната порака.
+      email_verification:
+        title: Потврда на е-пошта
+        description: Испратено до нов корисник за да ја потврди својата сметка.
+      user_invite:
+        title: Корисничка покана
+        description: Испратено до лицето кое е покането да регистрира сметка.
+      evaluation_comment:
+        title: Нов коментар за оценување
+        description: Испратено до администраторите и оценувачите поврзани со коментираната инвестиција
+      edit_info: Можете да ја уредите оваа е-пошта во
+      message_title: Наслов на пораката
+      message_body: Ова е примерок од содржината на пораката.
+      alert:
+        no_investments: Не се создадени никакви буџетски инвестиции. Некои примери на податоци се потребни за да се прегледа е-поштата.
+        no_comments: Нема создадени коментари. Некои примери на податоци се потребни за да се прегледа е-поштата.
+        no_replies: Нема создадени одговори. Некои примери на податоци се потребни за да се прегледа е-поштата.
+        no_evaluation_comments: Не се создадени коментари за оценување. Некои примери на податоци се потребни за да се прегледа е-поштата.
+    emails_download:
+      index:
+        title: Преземање на е-пошта
+        download_segment: Преземете адреси за е-пошта
+        download_segment_help_text: Преземете во CSV формат
+        download_emails_button: Преземете список со е-пошта
+    valuators:
+      index:
+        title: Вреднувач
+        name: Име
+        email: Е-пошта
+        description: Опис
+        no_description: Нема опис
+        no_valuators: Нема вреднувачи.
+        valuator_groups: Групи на вреднувачи
+        group: Група
+        no_group: Нема група
+        abilities: Способности
+        can_comment: Може да коментира
+        can_edit_dossier: Може да уредува досие
+      valuator:
+        add: Додај во вреднувачите
+      search:
+        title: 'Вреднувачи: Корисничко пребарување'
+      form:
+        edit_title: 'Вреднувачи: Уредете проценител'
+        updated: Вреднувачот е успешно ажуриран
+      show:
+        description: "Опис"
+        email: "Е-пошта"
+        group: Група
+        abilities: Способности
+        no_description: Без опис
+        no_group: Без група
+        no_abilities: Без способности
+    valuator_groups:
+      index:
+        title: "Група на вреднувачи"
+        name: "Име"
+        new: Создадете група на вреднувачи
+        members: Членови
+        no_groups: Нема групи на вреднувачи
+      show:
+        title: 'Група на вреднувачи: %{group}'
+        no_valuators: Нема вреднувачи доделени на оваа група
+      form:
+        new: Создадете група на вреднувачи
+        edit: Зачувај група вреднувачи
+    poll_officers:
+      index:
+        title: Службеници за гласање
+      officer:
+        add: Додадете
+        delete: Избришете ја позицијата
+        name: Име
+        email: Е-пошта
+        entry_name: офицер
+      search:
+        user_not_found: Корисникот не е пронајден
+        email_placeholder: Пребарувајте корисник преку е-пошта
+        help: За да додадете или отстраните службеници за анкета, користете го формуларот за пребарување подолу.
+    poll_officer_assignments:
+      index:
+        table_name: "Име"
+        table_email: "Е-пошта"
+        officers_title: Список на службеници
+        no_officers: Нема службеници назначени на оваа анкета.
+      by_officer:
+        date: "Датум"
+        booth: "Кабина"
+        assignments: Официјални смени во оваа анкета
+        no_assignments: Овој корисник нема службени смени во оваа анкета.
+    poll_shifts:
+      new:
+        date: "Датум"
+        table_email: "Е-пошта"
+        table_name: "Име"
+        add_shift: Додадете смена
+        shift: Задача
+        shifts: Смените во овој штанд
+        edit_shifts: Уредете смени
+        new_shift: Нова смена
+        no_shifts: Овој штанд нема смени
+        officer: Службеник
+        remove_shift: Отстранете
+        search_officer_button: Пребарувајте
+        search_officer_placeholder: Службеник за пребарување
+        search_officer_text: Побарајте службеник за да доделите нова смена
+        select_date: Изберете ден
+        no_voting_days: Деновите на гласање завршија
+        select_task: Изберете задача
+        table_shift: Смена
+      flash:
+        create: Додадена е смена
+        destroy: Смената е отстранета
+        unable_to_destroy: Смените со поврзани резултати или пребројувања не може да се избришат
+        date_missing: Мора да се избере датум
+      vote_collection: Соберете гласови
+      recount_scrutiny: Пребројување и проверка
+    booth_assignments:
+      manage_assignments: Управувајте со задачите
+      manage:
+        assignments_list: Задачи за анкета '%{poll}'
+        status:
+          assign_status: Задача
+          assigned: Доделена
+          unassigned: Недоделена
+        actions:
+          assign: Доделете штанд
+          unassign: Отстранете доделување на штанд
+    poll_booth_assignments:
+      alert:
+        shifts: Има смени поврзани со овој штанд. Ако го отстраните доделувањето на штандот, смените исто така ќе бидат избришани. Продолжете?
+      show:
+        location: "Локација"
+        results: "Резултати"
+        date: "Датум"
+        officers: Службеници
+        officers_list: Офицерска листа за овој штанд
+        no_officers: Нема службеници за овој штанд
+        recounts: Пребројувања
+        recounts_list: Список за пребројување на овој штанд
+        count_final: Конечно пребројување (по службеник)
+        count_by_system: Гласови (автоматски)
+        total_system: Вкупно гласови (автоматски)
+      index:
+        table_name: "Име"
+        table_location: "Локација"
+        booths_title: Список на штандови
+        no_booths: Нема штандови доделени за оваа анкета.
+    active_polls:
+      edit:
+        title: Опис на анкети
+      form:
+        description:
+          help_text: Овој текст ќе се појави во насловот на страницата со анкети. Може да се користи за додавање контекст на отворените анкети.
+    polls:
+      index:
+        name: "Име"
+        start_date: "Почетен датум"
+        closing_date: "Краен датум"
+        title: Листа на анкети
+        no_polls: Нема анкети.
+        create: Создадете анкета
+        dates: Датуми
+        geozone_restricted: Ограничено на области
+      new:
+        title: Нова анкета
+        submit_button: Создадете анкета
+      edit:
+        title: Уредете ја анкетата
+        submit_button: Ажурирајте ја анкетата
+      show:
+        questions_tab: Прашање
+        results_tab: Резултати
+        table_title: "Наслов"
+        booths_tab: Штандови
+        officers_tab: Службеници
+        recounts_tab: Пребројување
+        no_questions: Нема прашања доделени на оваа анкета.
+        questions_title: Список на прашања
+        edit_answers: Уредете ги одговорите
+        see_proposal: (Погледнете го предлогот)
+      destroy:
+        alert: Ова дејство ќе ја отстрани анкетата и сите прашања поврзани со неа.
+        success_notice: Анкетата е успешно избришана
+        unable_notice: Не можете да избришете анкета што има гласови
+    questions:
+      index:
+        title: "Прашање"
+        questions_tab: "Прашање"
+        table_proposal: "Предлог"
+        table_question: "Прашање"
+        table_poll: "Анкета"
+        create: Создадете прашање
+        no_questions: Нема прашања.
+        filter_poll: Филтрирајте по анкета
+        select_poll: Изберете Анкета
+        successful_proposals_tab: Успешни предлози
+        create_question: Создадете прашање
+        poll_not_assigned: Анкетата не е доделена
+      edit:
+        title: Уредете го прашањето
+      form:
+        poll_help: Можете да изберете само анкети кои сè уште не се започнати
+      new:
+        title: Создадете прашање за анкета %{poll}
+        title_proposal: Создадете прашање
+      destroy:
+        notice: Прашањето е успешно избришано
+      answers:
+        images:
+          add_image: "Додади слика"
+          save_image: Зачувајте ја сликата
+      show:
+        author: Автор
+        question: Прашање
+        video_url: Надворешно видео
+        proposal: Оригинален предлог
+        edit_question: Уредете го прашањето
+        valid_answers: Валидни одговори
+        add_answer: Додадете одговор
+        answers:
+          title: Одговор
+          description: Опис
+          images: Слики
+          documents: Документи
+          document_title: Наслов
+          document_actions: Акции
+          videos: Видеа
+          video_list: Список на видеа
+          images_list: Список на слики
+          documents_list: Список на документи
+      no_edit: Откако ќе започне анкетата, нема да може да се создаваат, уредуваат или бришат прашања, одговори или која било содржина поврзана со анкетата.
+    answers:
+      new:
+        title: Нов одговор
+      edit:
+        title: Уредето го одговорот
+      destroy:
+        success_notice: Одговорот е успешно избришан
+      images:
+        index:
+          title: Видеа
+          add_video: Додадете видео
+        new:
+          title: Ново видео
+        edit:
+          title: Уредето го видеото
+      show:
+        title: Наслов
+        description: Опис
+        images: Слики
+      videos:
+        index:
+          video_title: Наслов
+          video_url: Надворешно видео
+    recounts:
+      index:
+        table_booth_name: "Кабина"
+        title: Пребројувања
+        no_recounts: Нема што да се пребројува
+        all_booths_total: 'Кумулативен тотал од сите штандови:'
+        total_final: Конечни пребројувања
+        total_system: Гласови (автоматски)
+        table_total_recount: Вкупно пребројување (по службеник)
+        table_system_count: Гласови (автоматски)
+    results:
+      index:
+        title: "Резултати"
+        no_results: Нема резултати
+      result:
+        table_whites: "Целосно празни ливчиња"
+        table_nulls: "Невалидни ливчиња"
+        table_total: "Валидни ливчиња"
+        table_answer: Одговор
+        table_votes: Гласање
+      results_by_booth:
+        booth: Кабина
+        results: Резултати
+        see_results: Види резултати
+        title: Резултати по штанд
+    booths:
+      index:
+        name: "Име"
+        location: "Локација"
+        title: Список на активни штандови
+        no_booths: Нема активни штандови за некоја претстојна анкета.
+        add_booth: Додадете штанд
+        no_location: Нема локација
+      show:
+        location: "Локација"
+      new:
+        title: Нов штанд
+        submit_button: Создадете штанд
+      edit:
+        title: Уредете го штандот
+        submit_button: Ажурирајте го штандот
+      booth:
+        shifts: Управувајте со смените
+    officials:
+      edit:
+        destroy: Отстранете го статусот „Официјален“.
+        title: 'Официјални лица: Уредете го корисникот'
+      flash:
+        official_destroyed: 'Деталите се зачувани: корисникот повеќе не е официјално лице'
+        official_updated: Зачувани се деталите за официјалното лице
+      index:
+        name: Име
+        official_position: Официјална позиција
+        title: Официјални лица
+        help: На корисничките сметки означени како официјални ќе бидат истакнати нивните интервенции на платформата. Можете да ја дефинирате етикетата што се појавува до корисничките имиња на овие сметки од најважно (ниво 1) до најмалку важно (ниво 5).
+        no_officials: Нема официјални лица.
+        official_level: Ниво
+      level_0: Не е официјално
+      level_1: Ниво 1
+      level_2: Ниво 2
+      level_3: Ниво 3
+      level_4: Ниво 4
+      level_5: Ниво 5
+      search:
+        make_official: Официјализирајте
+        title: 'Официјални позиции: Корисничко пребарување'
+        no_results: Не се пронајдени официјални позиции.
+    organizations:
+      index:
+        filter: Филтрирај
+        filters:
+          all: Сите
+          pending: Во исчекување
+          rejected: Одбиено
+          verified: Потврдено
+        hidden_count:
+          one: Исто така постои <strong>one organisation</strong> без корисници или со скриен корисник.
+          other: Постојат <strong>%{count} организации</strong> без корисници или со скриен корисник.
+        phone_number: Телефон
+        responsible_name: Одговорен
+        no_organizations: Нема организации.
+        reject: Одбијте
+        rejected: Одбиено
+        verified: Потвредно
+        verify: Потвредете
+      search:
+        title: Пребарувајте организации
+        no_results: Не се пронајдени организации.
+        name: Име
+        email: Е-пошта
+        status: Статус
+        title: Органзација
+        pending: Во исчекување
+    proposals:
+      index:
+        title: Предлози
+        id: ИД
+        author: Автор
+        selected: Селектирано
+        select: Одберете
+        milestones: Пресвртници
+        no_proposals: Нема предлози.
+      show:
+        create_question: Додадете го овој предлог во анкета за гласање
+      form:
+        update: Ажурирајте го предлогот
+      update:
+        notice: Предлогот е успешно ажуриран
+    hidden_proposals:
+      index:
+        filter: Филтрирај
+        filters:
+          all: Сите
+          without_confirmed_hide: Во исчекување
+          with_confirmed_hide: Потврден
+        title: Скриени предлози
+        no_hidden_proposals: Нема скриени предлози.
+    hidden_proposal_notifications:
+      index:
+        filter: Филтрирај
+        filters:
+          all: Сите
+          without_confirmed_hide: Во исчекување
+          with_confirmed_hide: Потврден
+        title: Скриени известувања
+        no_hidden_proposals: Нема скриени известувања.
+    settings:
+      index:
+        update_setting: Ажурирање
+        title: Поставки
+        general: Поставки за конфигурација
+        participation_processes: Процеси на учество
+        images_and_documents: Слики и документи
+        feature_flags: Карактеристики
+        map:
+          form:
+            submit: Ажурирање
+          title: Конфигурација на карта
+          help: Овде можете да го приспособите начинот на кој мапата се прикажува на корисниците. Повлечете го маркерот на картата или кликнете каде било над картата, поставете го саканиот зум и кликнете на копчето „Ажурирај“.
+          flash:
+            update: Конфигурацијата на картата е успешно ажурирана.
+          how_to_enable: За да се прикаже картата на корисниците, мора да овозможите „Геолокација на предлози и буџетски инвестиции“ на табот „Функции“.
+        dashboard:
+          title: Контролна табла со предлози
+        remote_census:
+          title: Конфигурација на далечински попис
+          how_to_enable: За да го конфигурирате далечинскиот попис (SOAP) мора да овозможите „Конфигурирајте линк со далечински попис (SOAP)“ на табот „Функции“.
+        sdg:
+          title: SDG конфигурација
+          how_to_enable: За да ги прикажете опциите за конфигурација од Целите за одржлив развој, мора да овозможите „SDG“ на табот „Функции“.
+      remote_census_general_name: Генерални информации
+      remote_census_request_name: Побарајте податоци
+      remote_census_response_name: Податоци за одговор
+      setting: Карактеристика
+      setting_name: Поставување
+      no_description: Нема опис
+      setting_value: Вредност
+    shared:
+      actions: Акции
+      title: Наслов
+      description: Опис
+      image: Слика
+      proposal: Предлог
+      author: Автор
+      content: Содржина
+      created_at: Креирано на
+      search:
+        advanced_filters:
+          sdg_goals:
+            all: Сите цели
+            label: По цел
+          sdg_targets:
+            all: Сите цели
+            label: По цел
+        label:
+          booths: Пребарувајте штанд по име или локација
+          budget_investments: Пребарувајте инвестиции по наслов, опис или наслов
+          comments: Пребарувајте коментари
+          debates: Пребарувајте дебати по наслов или опис
+          legislation_processes: Пребарувајте процеси по наслов или опис
+          legislation_proposals: Пребарувајте предлози по наслов или опис
+          local_census_records: Пребарување по број на документ
+          organizations: Име, е-пошта или телефонски број
+          poll_officers: Пребарувајте службеници во анкетата
+          poll_questions: Пребарувајте прашања за анкети
+          polls: Пребарувајте анкети по име или опис
+          proposals: Пребарувајте предлози по наслов, код, опис или прашање
+          proposal_notifications: Пребарувајте ги известувањата по наслов или опис
+          users: Пребарувајте корисник по име или е-пошта
+        search: Пребарување
+      search_results: Резултати од пребарувањето
+      no_search_results: Не се пронајдени резултати.
+      show_image: Прикажете слика
+      moderated_content: Проверете ја содржината модерирана од модераторите и потврдете дали модерирањето е правилно направено.
+      view: Погледнете
+      color_help: Хексадецимален формат
+      show_results_and_stats: Прикажете резултати и статистика
+      results_and_stats_reminder: Обележувајќи ги овие полиња за избор, резултатите и/или статистиката ќе бидат јавно достапни и секој корисник ќе ги види.
+      close_modal: Затворете модален
+      example_url: На пример, https://consulproject.org или /help
+    geozones:
+      index:
+        title: Геозона
+        create: Создадете геозона
+      geozone:
+        name: Име
+        external_code: Надворешен код
+        census_code: Пописен код
+        code_help: Код за одговор за оваа геозона на пописот API
+        coordinates: Координати
+        coordinates_help: Координати кои ќе генерираат област за кликнување на карта со HTML слика
+      edit:
+        form:
+          submit_button: Зачувај промени
+        editing: Уредување на геозоната
+        back: Вратетете се назад
+      new:
+        back: Вратетете се назад
+        creating: Создадете област
+      delete:
+        success: Геозоната е успешно избришана
+        error: Оваа геозона не може да се избрише бидејќи има елементи прикачени на неа
+    signature_sheets:
+      no_signature_sheets: Нема листови со потписи
+      author: Автор
+      created_at: Дата на создавање
+      name: Име
+      index:
+        title: Листови со потписи
+        new: Нови листови со потписи
+      new:
+        title: Нови листови со потписи
+        submit: Создадете лист со потпис
+        document_numbers_note: "Одделете ги броевите со запирки (;)"
+        text_help:
+          required_fields_note: 'За да потврдите корисник, вашата апликација има потреба од: број на документ'
+          date_of_birth_note: 'Ден на раѓање (дд/мм/гггг)'
+          postal_code_note: 'и Поштенски број'
+          required_fields_structure_note: Задолжителните полиња за секој корисник мора да бидат одделени со запирки и секој корисник мора да се одвои со точка-запирка.
+          example_text: 'Пример: '
+      show:
+        author: Автор
+        users: Корисници
+        created_at: Создаден
+        signature_count: 'Број на потписи:'
+        verified:
+          one: Има %{count} валиден потпис
+          other: Има %{count} валидни потписи
+        unverified:
+          one: Има %{count} невалиден потпис
+          other: Има %{count} невалидни потписи
+        unverified_error: (Не е потврдено со Попис)
+        voted:
+          zero: Нема креирани гласови од потврдените потписи.
+          one: Има %{count} глас создадени од потврдените потписи.
+          other: Има %{count} гласови создадени од потврдените потписи.
+        loading: Сè уште има потписи кои се проверуваат со Пописот, ве молиме освежете ја страницата за неколку моменти
+    stats:
+      show:
+        stats_title: Статистика
+        summary:
+          comments: Коментари
+          debates: Дебати
+          proposals: Предлози
+          budget_investments: Проекти за инвестирање
+          comment_votes: Гласови за коментари
+          debate_votes: Гласови за дебата
+          proposal_votes: Гласови за предлози
+          budgets: Отворени буџети
+          unverified_users: Непроверени корисници
+          user_level_three: Корисници на трето ниво
+          user_level_two: Корисници на второ ниво
+          users: Вкупно корисници
+          verified_users: Потврдени корисници
+          verified_users_who_didnt_vote_proposals: Потврдени корисници кои не гласале предлози
+          visits: Посети
+          votes: Вкупно гласови
+        budgets_title: Партиципативно буџетирање
+        participatory_budgets: Партиципативни буџети
+        direct_messages: Директни пораки
+        incomplete_verifications: Нецелосни проверки
+        sdg: SDG
+        proposal_notifications: Предлог нотификации
+        polls: Анкети
+      graph:
+        visit: Посети
+        level_2_user: Корисници на 2 ниво
+        debate_created: Дебати
+        proposal_created: Граѓански предлог
+      budgets:
+        no_data_before_balloting_phase: Нема податоци за прикажување пред фазата на гласање.
+        title: Партиципативни буџети - Статистика за учество
+        supporting_phase: Фаза на поддржување
+        balloting_phase: Конечно гласање
+      budget_balloting:
+        vote_count: Гласање
+        participant_count: Учесници
+        title: Конечна статистика за гласање
+        votes_per_heading: Гласови по наслов
+        participants_per_district: Учесници по област
+      budget_supporting:
+        users: Корисници
+        vote_count: Гласање
+        participant_count: Учесници
+        title: Статистики на фазата на поддржување
+        headings: Наслови
+      direct_messages:
+        total: Вкупно
+        title: Директни пораки
+        users_who_have_sent_message: Корисници кои испратиле приватна порака
+      proposal_notifications:
+        title: Предлог нотификации
+        total: Вкупно
+        proposals_with_notifications: Предлози со известувања
+        not_available: Предлогот не е достапен
+      polls:
+        all: Анкети
+        table:
+          poll_name: Анкета
+          question_name: Прашање
+          origin_total: Вкупно учесници
+        title: Статистика за анкети
+        web_participants: Веб учесници
+        total_participants: Вкупно учесници
+        poll_questions: 'Прашања од анкета: %{poll}'
+        table:
+          origin_web: Веб учесници
+      sdg:
+        debates: "Дебати"
+        polls: "Анкети"
+        proposals: "Предлози"
+        budget_investments:
+          amount: Одобрена сума
+          winners: Победнички инвестициски проекти
+          sent: Испратени инвестициски проекти
+        title: Цели за одржлив развој - статистика
+    tags:
+      create: Креирај тема
+      index:
+        topic: Тема
+        add_tag: Додадете нова тема за предлог
+        title: Теми за предлог
+        help: Кога корисникот создава предлог, следните теми се предлагаат како стандардни ознаки.
+    users:
+      columns:
+        id: ИД
+        name: Име
+        email: Е-пошта
+        document_number: Број на документ
+        erase_reason: Избришете ја причината
+        roles: Улоги
+        verification_level: Ниво на верификација
+      index:
+        title: Корисник
+        filter: Филтрирај
+        filters:
+          active: Активно
+        no_users: Нема корисници.
+        filters:
+          erased: Избришано
+      search:
+        placeholder: Пребарувајте корисник по е-пошта, име или број на документ
+    verifications:
+      index:
+        phone_not_given: Телефонот не е даден
+        sms_code_not_confirmed: Не го потврди кодот за смс
+        title: Нецелосни проверки
+    site_customization:
+      content_blocks:
+        content_block:
+          body: Тело на текстот
+          name: Име
+        information: Информации за блокови на содржина
+        about: Можете да креирате блокови на содржина на HTML што може да се вметнат на различни места на вашата веб-локација.
+        html_format: 'Блок на содржина е група на линкови и мора да го има следниот формат:'
+        no_blocks: Нема блокови на содржина.
+        create:
+          notice: Блокот на содржина е успешно создаден
+          error: Блокот на содржинате не можеше да се создаде
+        update:
+          notice: Блокот на содржина е успешно ажуриран
+          error: Блокот на содржината не може да се ажурира
+        destroy:
+          notice: Блокот на содржина е успешно избришан
+        edit:
+          title: Уредување на блокот на содржина
+        index:
+          create: Создадете нов блок на содржина
+          delete: Избришете блок
+          title: Блокови на содржина
+        new:
+          title: Создадете нов блок на содржина
+        content_block:
+          names:
+            top_links: Главни линкови
+            footer: Footer
+            subnavigation_left: Главна навигација лево
+            subnavigation_right: Главна навигација десно
+      images:
+        index:
+          title: Стилизирана слика
+          update: Ажурирање
+          image: Слика
+          delete: Избришете
+        update:
+          notice: Сликата е успешно ажурирана
+          error: Сликата не може да се ажурира
+        destroy:
+          notice: Сликата е успешно избришана
+          error: Сликата не може да се избрише
+      pages:
+        form:
+          options: Опции
+        page:
+          created_at: Креирано на
+          status: Статус
+          updated_at: Ажурирано на
+          title: Наслов
+          slug: Опис на дел од УРЛ
+        create:
+          notice: Страницата е успешно создадена
+          error: Страницата не можеше да се создаде
+        update:
+          notice: Страницата е успешно ажурирана
+          error: Страницата не може да се ажурира
+        destroy:
+          notice: Страницата е успешно избришана
+        edit:
+          title: Уредување %{page_title}
+        index:
+          create: Создадете нова страница
+          delete: Избришете страница
+          title: Прилагодени страници
+          see_page: Погледнете
+        new:
+          title: Создадете нова прилагодена страница
+          slug_help: Текст за да се идентификува оваа страница на URL, на пример <code>https://consulproject.org/page-slug</code>
+        page:
+          see_cards: Управувајте со картичките
+        cards:
+          cards_title: картички
+          create_card: Создадете картичка
+          no_cards: Нема картички.
+          columns_help: Ширина на картичката во број на колони. На мобилните екрани секогаш е ширина од 100%.
+          create:
+            notice: Картичката е успешно креирана!
+          update:
+            notice: Картичката е успешно ажурирана
+          destroy:
+            notice: Картичката е успешно отстранета
+    homepage:
+      title: Почетна страница
+      description: Активните модули се појавуваат на почетната страница по истиот редослед како овде.
+      feeds:
+        proposals: Предлози
+        debates: Дебати
+        processes: Процес
+      header_title: Наслов
+      no_header: Нема наслови.
+      create_header: Создадете наслов
+      cards_title: Картички
+      create_card: Создадете картички
+      no_cards: Нема картички.
+      new:
+        header_title: Нов наслов
+        submit_header: Создадете наслов
+        card_title: Нова картичка
+        submit_card: Создадете картичка
+      edit:
+        header_title: Уредете го насловот
+        submit_header: Зачувајте го насловот
+        card_title: Уредете ја картичката
+        submit_card: Зачувајте ја картичката
+    audits:
+      id: "ИД"
+      actions: "Акции"
+      title: Промена на дневникот
+      changes: Список на промени
+      field: Поле
+      new_value: Нова вредност
+      old_value: Стара вредност
+      edited_at: Уредено во
+      edited_by: Уредено од
+      empty: Нема евидентирани промени
+    local_census_records:
+      index:
+        document_type: Вид на документ
+        document_number: Број на документ
+        date_of_birth: Датум на раѓање
+        postal_code: Поштенски код
+        title: Управувајте со локалниот попис
+        create: Создадете нов локален пописен запис
+        no_local_census_records: Нема локални пописни записи.
+        import: Увезете CSV
+      new:
+        creating: Создавање нов локален пописен запис
+      create:
+        notice: Новиот локален пописен запис е успешно создаден!
+      edit:
+        editing: Уредување на локалниот пописен запис
+      update:
+        notice: Локалниот пописен запис е успешно ажуриран!
+      destroy:
+        notice: Локалниот пописен запис е успешно отстранет!
+      imports:
+        new:
+          title: Досиеjа од локален попис
+          subtitle: Увезете CSV датотека
+        create:
+          notice: Процесот на увоз на локални пописни записи е успешно извршен!
+        show:
+          title: Управувајте со локалниот попис
+          subtitle: Увезете ги процесните резултати
+          import: Увезете повторно
+          errored: Грешени редови
+          created: Создадени записи
+        local_census_records:
+          no_records_found: Не се пронајдени записи.
+    machine_learning:
+      tab_help: "Помош"
+      tags: "Тагови"
+      cancel: Откажете ја операцијата
+      cancel_alert: Оваа акција ќе ја откаже тековната скрипта и ќе биде неопходно скриптата да се изврши повторно.
+      comments_summary: Резиме на коментари
+      comments_summary_description: Прикажува автоматски генерирано резиме на коментари за сите ставки за кои може да се коментира.
+      data_folder_content: Содржина на фолдерот со податоци
+      error: 'Грешка:'
+      execute_script: Извршете ја скриптата
+      executed_by: 'Извршено од:'
+      executed_script: 'Извршена скрипта:'
+      feature_disabled: Оваа функција е оневозможена. За да користите машинско учење, можете да го овозможите од %{link}.
+      feature_disabled_link: страница за поставки
+      help:
+        title_1: 'Што е вештачка интелигенција / машинско учење?'
+        description_1: 'Традиционално, компјутерските програми се дизајнирани со воспоставување 
+	        прецизни правила за тоа што треба да прави програмата во секоја ситуација и како да се 
+	        обработат достапните информации во секој момент. Она што е општо познато како вештачка интелигенција / 
+	        машинско учење е тип на програми за кои точно е утврдено која е задачата што треба да се изврши 
+	        и како се оценува дали задачата е подобро или полошо извршена. Но, за разлика од првиот, 
+	        системот открива или учи кој би бил најсоодветен метод за извршување на задачата.'
+        title_2: 'Што значи модулот за вештачка интелигенција / машинско учење во CONSUL?'
+        description_2: 'Овој модул овозможува каков било тип на програми за вештачка интелигенција / машинско учење да се имплементираат во CONSUL. 
+	        Програмите можат да ги обработат информациите достапни во CONSUL и да произведат резултати кои им помагаат и на 
+	        корисниците и на администраторите да спроведат поефективно и поинтелигентно учество на граѓаните. Модулот е развиен 
+	        за да го олесни имплементирањето и стартувањето на новите програми, одржувајќи го општиот код на CONSUL и кодот на 
+	        овие нови програми независни еден од друг.'
+        title_3: Како да го користите овој модул
+        description_3: 'За да го користите за прв пат, потребно е да ги следите упатствата достапни во документацијата на CONSUL 
+	        за правилно активирање на овој модул. Откако модулот е правилно активиран, програмите се извршуваат од табулаторот „Извршете ги скриптите“. 
+	        Пред да го извршиме, во истиот таб можеме да видиме проценка на времето на извршување и други релевантни информации. 
+	        На крајот од извршувањето, можеме да ја активираме содржината што ќе биде прикажана во CONSUL од табулаторот „Settings“, 
+	        како и да преземеме други генерирани датотеки што може да ни бидат корисни.'
+        title_4: 'Како да имплементирате нови скрипти за вештачка интелигенција / машинско учење'
+        description_4: 'Ве молиме користете ги претходните скрипти како примери.'
+        description_4b: 'Новите скрипти треба да се наоѓаат во фолдерот <code>public/machine_learning/scripts</code>'
+        description_4c: 'Влезните податоци што ќе се користат од скриптата ќе бидат креирани како
+          JSON датотеки во фолдерот <code>../data</code>'
+        description_4d: 'Секој генериран излез треба да се стави во фолдерот <code>../data</code>'
+        description_4e: 'Се препорачува да се создаде независна <code>.ini</code>
+          текстуална датотека со поставките на скриптата, со истото име на скриптата и читлива од конфигураторот. 
+	        Оваа датотека ќе ја олесни промената на поставките од страна на администраторите.'
+        description_4f: 'Се препорачува да се вклучи како прва линија на сценариото почетна низа со тројни цитати со кратки 
+	        информации за неа и линкови до сите релевантни информации. Оваа низа автоматски ќе се прикаже во Административниот интерфејс.'
+        description_4g: 'Се препорачува да се најавите на релевантните информации за сценариото
+          во <code>.log</code> текстуална датотека, со истото име на сценариото.'
+        title_5: 'За да користите скрипти за вештачка интелигенција / машинско учење, треба да имате инсталирано Python на вашиот сервер'
+        description_5: 'Овде можете да ги видите примерите на упатствата за серверот Ubuntu 18.04:'
+      help_text: Оваа функционалност е експериментална.
+      last_execution: Последно извршување
+      no_content: Сè уште нема генерирана содржина.
+      notice:
+        success: Последната скрипта е успешно извршена.
+        error: Се појави грешка. Можете да ги видите деталите подолу.
+        working: Скриптата работи. Администраторот што ја извршил ќе добие е-пошта кога ќе заврши.
+        delete_generated_content: Генерираната содржина е успешно избришана.
+      output_files: 'Излезни датотеки:'
+      related_content: Поврзана содржина
+      related_content_description: Додава автоматски генерирана поврзана содржина на предлози и партиципативни буџетски проекти.
+      script_info: 'Ќе добиете е-пошта во %{email} кога скриптата ќе заврши.'
+      script_name: 'Име на скриптата:'
+      select_script: Изберете python скрипта за извршување
+      started_at: 'Почнато на:'
+      tab_scripts: Извршете ја скриптата
+      tab_settings: Поставки / Генерирана содржина
+      tags_description: Генерира автоматски ознаки на сите ставки кои може да се означат.
+      title: ВИ / Машинско учење

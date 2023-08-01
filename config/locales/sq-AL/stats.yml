@@ -1,0 +1,43 @@
+sq:
+  stats:
+    advanced: Statistika të avancuara
+    by_gender: Pjesëmarrsit sipas gjinis
+    by_age: Pjesëmarrsit sipas moshës
+    by_geozone: Pjesëmarrsit sipas zonave
+    men_percentage: '%{percentage} Meshkuj'
+    women_percentage: '%{percentage} Femra'
+    age: Mosha
+    age_more_than: '%{start} vjeç e lart'
+    age_range: '%{start} - %{finish} vjeç'
+    geozone: Rrethi
+    no_demographic_data:
+      one: '* Nuk ka të dhëna demografike për 1 pjesëmarrës.'
+      other: '* Nuk ka të dhëna demografike për %{count} pjesëmarrës.'
+    title: "Të dhënat pjesëmarrëse"
+    total_participants: "Pjesëmarrësit"
+    total: "Totali"
+    budgets:
+      link: "Statusi"
+      total_unfeasible_investments: "Projektet e parealizueshme"
+      total: "Totali"
+      heading: "Kreu"
+      participants_every_phase: "Totali i Pjesëmarrësve"
+      page_title: '%{budget} - Statistikat e pjesëmarrjes'
+      total_investments: Totali i projekteve investuese
+      total_selected_investments: Projektet në fazën përfundimtare të votimit
+      by_phase: Pjesëmarrësit sipas fazave
+      by_heading: Pjesëmarrësit sipas fazave dhe krerëve
+      investments_sent: Propozim investimet u dërguan
+      participants_support_phase: Faza e mbështetjes së pjesëmarrësve
+      participants_vote_phase: Faza e votimit të pjesëmarrësve
+      percent_total_participants: '% Totali i pjesëmarrësve'
+      participatory_disclaimer: '** Numri i pjesëmarrësve në total i referohet personave 
+        që kanë krijuar, mbështetur ose votuar propozim investime.'
+      heading_disclaimer: '*** Të dhënat rreth krerëve i referohen krerit ku ka votuar secili 
+        përdorues, jo domosdoshmërisht atij në të cilin është regjistruar ai person.'
+    polls:
+      by_channel: Pjesëmarrësit sipas kanalit
+      vote_by_channel: Lloji i votës sipas kanalit
+      web_percentage: '%{percentage} Web'
+      booth_percentage: '%{percentage} Kabina'
+      letter_percentage: '%{percentage} Mail'

@@ -1,0 +1,9 @@
+<td style="<%= css_for_mailer_content %>">
+  <h1 style="<%= css_for_mailer_heading %>">
+    <%= @direct_message.title %>
+  </h1>
+
+  <div style="<%= css_for_mailer_text %>">
+    <%= mailer_simple_format(@direct_message.body) %>
+  </div>
+</td>

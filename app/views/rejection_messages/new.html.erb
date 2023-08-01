@@ -1,0 +1,13 @@
+<%= form_for [@receiver, @direct_message] do |f| %>
+    <h1>
+      <%= t("users.rejection_messages.new.title", receiver: @receiver.name) %>
+    </h1>
+    <%= render "shared/errors", resource: @direct_message %>
+
+    <%= f.text_field :title %>
+    <%= f.text_area :body, rows: "3" %>
+
+    <div class="small-12 medium-4">
+      <%= f.submit t("users.rejection_messages.new.submit_button"), class: "button " %>
+    </div>
+<% end %>

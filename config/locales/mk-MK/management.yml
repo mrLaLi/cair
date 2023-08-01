@@ -1,0 +1,134 @@
+mk:
+  management:
+    unverified_users_list: Список на непроверени корисници
+    account:
+      menu:
+        reset_password_email: Ресетирајте ја лозинката преку е-пошта
+        reset_password_manually: Ресетирајте ја лозинката рачно
+      alert:
+        unverified_user: Сè уште нема најавен потврден корисник 
+      show:
+        title: Корисничка сметка
+      edit:
+        back: Назад
+        password:
+          password: Лозинка
+        title: 'Уредете ја корисничката сметка: ресетирајте ја лозинката'
+        password:
+          send_email: Испратете е-пошта за ресетирање на лозинката
+          reset_email_send: Е-поштата е правилно испратена.
+          reseted: Лозинката е успешно ресетирана
+          random: Генерирајте случајна лозинка
+          save: Зачувајте ја лозинката
+          print: Печатете ја лозинката
+          print_help: Ќе можете да ја испечатите лозинката кога ќе се зачува.
+    account_info:
+      change_user: Променете го корисникот
+      document_number_label: 'Број на документ:'
+      email_label: 'Е-пошта:'
+      identified_label: 'Идентификуван како:'
+      username_label: 'Корисничко име:'
+      document_type_label: "Вид на документ:"
+    check: Проверете го документот
+    dashboard:
+      index:
+        title: Управување
+        info: Овде можете да управувате со корисниците преку сите дејства наведени во левото мени.
+    date_of_birth: Датум на раѓање
+    document_verifications:
+      already_verified: Оваа корисничка сметка е веќе потврдена.
+      not_verified: Оваа корисничка сметка не е потврдена.
+      has_no_account: "За да креирате сметка, одете на %{link} и кликнете на <b>„Регистер“</b>во горниот лев дел од екранот."
+      link: CONSUL
+      in_census_has_following_permissions: 'Овој корисник може да учествува на веб-локацијата со следните дозволи:'
+      not_in_census: Овој документ не е регистриран.
+      not_in_census_info: 'Граѓаните кои не се во Пописот можат да учествуваат на веб-страницата со следните дозволи:'
+      please_check_account_data: Проверете дали податоците за сметката погоре се точни.
+      title: Управување со корисници
+      under_age: Ја немате потребната возраст за да ја потврдите вашата сметка.
+      verify: Потврдете
+    email_verifications:
+      already_verified: Оваа корисничка сметка е веќе потврдена.
+      choose_options: 'Ве молиме изберете една од следниве опции:'
+      document_found_in_census: Овој документ беше пронајден во пописот, но нема корисничка сметка поврзана со него.
+      document_mismatch: 'Оваа е-пошта припаѓа на корисник кој веќе има поврзана идентификација: %{document_number}(%{document_type})'
+      email_sent_instructions: "За целосно да се потврди овој корисник, потребно е корисникот да кликне на линкот што го испративме 
+	       на адресата на е-пошта погоре. Овој чекор е потребен за да се потврди дека адресата му припаѓа нему."
+      if_existing_account: Ако лицето веќе има креирано корисничка сметка на веб-локацијата,
+      if_no_existing_account: Ако ова лице сè уште не создало сметка
+      introduce_email: 'Воведете ја е-поштата што се користи на сметката:'
+      send_email: Испратете е-пошта за потврда
+    menu:
+      create_proposal: Направи предлог
+      support_proposals: Поддржи предлози
+      print_proposals: Печатете предлози
+      create_budget_investment: Создадете буџетска инвестиција
+      print_budget_investments: Печатете буџетски инвестиции
+      support_budget_investments: Поддржете ги буџетските инвестиции
+      unverified_users: Непроверени корисници
+      users: Управување со корисници
+      user_invites: Испратете покани
+      select_user: Изберете корисник
+    print:
+      proposals_info: Создадете го вашиот предлог на http://url.consul
+      proposals_title: 'Предлози:'
+      budget_investments_info: Учествувајте во http://url.consul
+    print_info: Испечатете ја оваа информација
+    proposals:
+      alert:
+        unverified_user: Корисникот не е потврден
+      print:
+        print_button: Печатете
+      create_proposal: Направи предлог
+      index:
+        title: Поддржи предлози
+    budgets:
+      table_name: Име
+      table_phase: Фаза
+      table_actions: Акции
+      create_new_investment: Создадете буџетска инвестиција
+      print_investments: Печатете буџетски инвестиции
+      support_investments: Поддржете ги буџетските инвестиции
+      no_budgets: Нема активни буџети со учество.
+    budget_investments:
+      alert:
+        unverified_user: Корисникот не е потврден
+      create: Создадете буџетска инвестиција
+      edit: Уредете ја буџетската инвестиција
+      filters:
+        heading: Концепт
+        unfeasible: Неостварлива инвестиција
+      print:
+        print_button: Печатете
+      search_results:
+        one: ' што го содржи терминот ''%{search_term}'''
+        other: ' што го содржи терминот ''%{search_term}'''
+    sessions:
+      need_managed_user: За да ја извршите оваа акција, мора да изберете корисник
+      signed_out: Успешно се одјавивте.
+      signed_out_managed_user: Корисничката сесија е успешно одјавена.
+    users:
+      create_user: Создадете нова сметка
+      create_user_info: Ќе создадеме сметка со следните податоци
+      create_user_submit: Создадете корисник
+      create_user_success: "Испративме е-пошта на адресата на е-пошта <b>%{email}</b>
+        со цел да се потврди дека му припаѓа на овој корисник. Таа содржи линк на кој треба да кликнат. 
+	      Потоа ќе мора да ја постават лозинката за пристап пред да можат да се логираат на веб-страницата"
+      autogenerated_password: "Автоматски-генерираната лозинка е <b>%{password}</b>, можете да го промените во делот „Моја сметка“ на веб"
+      email_optional_label: Е-пошта (изборно)
+      erased_notice: Корисничката сметка е избришана.
+      erased_by_manager: 'Избришано од менаџерот: %{manager}'
+      erase_account_link: Избришете го корисникот
+      erase_account_confirm: Дали сте сигурни дека сакате да ја избришете сметката? Ова дејство не може да се врати
+      erase_warning: Ова дејство не може да се врати. Проверете дали сакате да ја избришете оваа сметка.
+      erase_submit: Избришете ја сметката
+    user_invites:
+      new:
+        label: Е-пошти
+        info: "Внесете ги е-поштите одделени со запирки (',')"
+        submit: Испратете покани
+        title: Испратете покани
+      create:
+        success: "<strong>%{count} покани</strong> се испратени."
+        title: Испратете покани
+    username_label: Корисничко име

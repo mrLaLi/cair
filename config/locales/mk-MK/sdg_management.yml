@@ -1,0 +1,53 @@
+mk:
+  sdg_management:
+    actions:
+      edit: Управувајте со целите
+    header:
+      title: СДГ содржина
+    homepage:
+      title: Конфигурација на почетната страница
+      header:
+        create: Создадете наслов
+        no_cards: Нема наслов
+        title: Header
+      create_card: Создадет %{phase} картичка
+      no_cards: Нема картички за оваа фаза
+    menu:
+      budget_investments: "Партиципативни буџети"
+      debates: "Дебати"
+      polls: "Анкети"
+      proposals: "Предлози"
+      legislation_processes: Законски процеси
+      legislation_proposals: Законски предлози
+      sdg_content: Цели
+      sdg_homepage: Почетна страница за СДГ
+      debates: "Дебати"
+      polls: "Анкети"
+      proposals: "Предлози"
+    local_targets:
+      create:
+        notice: Локалната цел е успешно креирана
+      destroy:
+        notice: Локалната цел е успешно избришана
+      edit:
+        title: Уредете локална цел
+      form:
+        code: Кодот мора да започне со избраниот целен код проследен со точка
+        description: Овој опис ќе биде прикажан како помош за корисниците.
+      index:
+        new: Создадете локална цел
+      new:
+        title: Нова локална цел
+      update:
+        notice: Локалната цел е успешно ажурирана
+    relations:
+      index:
+        filter: "Филтрирај"
+        filters:
+          sdg_reviewed: Означено како прегледано
+          all: "Сите"
+          pending_sdg_review: "Во исчекување"
+      update:
+        notice: '%{relatable} успешноажурирано'
+      update_and_review:
+        notice: '%{relatable} успешно ажурирано и означено како прегледано'

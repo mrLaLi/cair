@@ -1,0 +1,8 @@
+mk:
+  sdg:
+    goals:
+      title: "Цели за Одржлив Развој"
+      filter:
+        heading: "Филтри според ЦОР"
+    related_list_selector:
+      remove_tag: "Oтстрани"

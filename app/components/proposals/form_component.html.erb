@@ -1,0 +1,208 @@
+<%= translatable_form_for(proposal, url: url, html: { class: "proposal-form" }) do |f| %>
+  <%= render "shared/errors", resource: proposal %>
+
+  <fieldset class="required-fields">
+    <legend><%= t("shared.required") %></legend>
+    <%= render "shared/globalize_locales", resource: proposal %>
+
+    <%= f.translatable_fields do |translations_form| %>
+      <div>
+        <%= translations_form.text_field :title,
+              maxlength: Proposal.title_max_length,
+              data: suggest_data(proposal) %>
+      </div>
+      <div class="js-suggest" data-locale="<%= translations_form.locale %>"></div>
+
+      <div>
+        <%= translations_form.text_area :summary,
+                                        rows: 4, maxlength: 200,
+                                        hint: t("proposals.form.proposal_summary_note") %>
+      </div>
+
+      <div>
+        <%= translations_form.text_area :description,
+                                        maxlength: Proposal.description_max_length,
+                                        class: "html-area" %>
+      </div>
+    <% end %>
+  </fieldset>
+
+  <%= f.invisible_captcha :subtitle %>
+
+  <fieldset>
+    <legend><%= t("shared.optional") %></legend>
+
+    <div>
+      <%= f.text_field :video_url, hint: t("proposals.form.proposal_video_url_note") %>
+    </div>
+
+    <% if feature?(:allow_images) %>
+      <div class="images">
+        <%= render "images/nested_image", f: f %>
+      </div>
+    <% end %>
+
+    <% if feature?(:allow_attached_documents) %>
+      <div class="documents">
+        <%= render "documents/nested_documents", f: f %>
+      </div>
+    <% end %>
+
+    <div>
+      <%= f.select :geozone_id, geozone_select_options,
+        include_blank: t("geozones.none") %>
+    </div>
+
+    <% if feature?(:map) %>
+      <div>
+        <%= render "map_locations/form_fields",
+                   form:     f,
+                   map_location: proposal.map_location || MapLocation.new,
+                   label:    t("proposals.form.map_location"),
+                   help:     t("proposals.form.map_location_instructions"),
+                   remove_marker_label: t("proposals.form.map_remove_marker"),
+                   parent_class: "proposal",
+                   i18n_namespace: "proposals" %>
+      </div>
+    <% end %>
+
+    <div>
+      <%= f.label :tag_list, t("proposals.form.tags_label") %>
+      <p class="help-text" id="tag-list-help-text"><%= t("proposals.form.tags_instructions") %></p>
+
+      <div id="category_tags" class="tags">
+        <%= f.label :category_tag_list, t("proposals.form.tag_category_label") %><br>
+        <% categories.each do |tag| %>
+          <a class="js-add-tag-link"><%= tag.name %></a>
+        <% end %>
+      </div><br>
+      <%= f.label t("pages.help.sectors.chose_sector")%><br>
+      <div>
+        <ul>
+          <li><p><%= t("pages.help.sectors.sector1")%></p></li>
+          <li><p><%= t("pages.help.sectors.sector2")%></p></li>
+          <li><p><%= t("pages.help.sectors.sector3")%></p></li>
+          <li><p><%= t("pages.help.sectors.sector4")%></p></li>
+          <li><p><%= t("pages.help.sectors.sector5")%></p></li>
+        <ul>
+      </div>
+          <%= link_to t("pages.help.sectors.more"), '#', id: 'popup-link', class: "float-left button hollow" %><br><br>
+        <!--<%=link_to t("pages.help.sectors.more"), help_path(anchor: "sectors"), class: "float-left button hollow", data: {toggle: "modal", target: "#myModal" } %> -->
+        <!--<%= link_to help_path(anchor: "sectors"), title: t("shared.target_blank"), class: "float-left button hollow", target: "_blank" do %> 
+        <%end%>-->
+        <br>
+
+      <%= f.text_field :tag_list, value: proposal.tag_list.to_s,
+                        label: false,
+                        placeholder: t("proposals.form.tags_placeholder"),
+                        class: "js-tag-list tag-autocomplete",
+                        aria: { describedby: "tag-list-help-text" },
+                        data: { js_url: suggest_tags_path } %>
+        
+    </div>
+
+    <% if current_user.unverified? %>
+      <div>
+        <%= f.text_field :responsible_name,
+          hint: t("proposals.form.proposal_responsible_name_note") %>
+      </div>
+    <% end %>
+
+    <%= render SDG::RelatedListSelectorComponent.new(f) %>
+  </fieldset>
+
+  <div class="actions">
+    <% if proposal.new_record? %>
+      <div>
+        <%= f.check_box :terms_of_service,
+          title: t("form.accept_terms_title"),
+          label: t("form.accept_terms",
+                   policy: link_to(t("form.policy"), "/privacy", target: "blank"),
+                   conditions: link_to(t("form.conditions"), "/conditions", target: "blank")
+                  ) %>
+      </div>
+    <% end %>
+
+    <%= f.submit(class: "button", value: t("proposals.#{action_name}.form.submit_button")) %>
+  </div>
+<% end %>
+<!--Pop-up start-->
+    <div id="popup" style="display: none;">
+      <div id="popup-content">
+        <p><%= sanitize(t("pages.help.sectors.sector1")) %>
+        <ul class="features">
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep1")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep2")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep3")) %>
+            </li>
+        </ul>
+        <%= sanitize(t("pages.help.sectors.sector2")) %>
+        <ul class= "features">
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep4")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep5")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep6")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep7")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep8")) %>
+            </li>
+        </ul>
+        <%= sanitize(t("pages.help.sectors.sector3")) %>
+        <ul class= "features">
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep9")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep10")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep11")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep12")) %>
+            </li>
+        </ul>
+        <%= sanitize(t("pages.help.sectors.sector4")) %>
+        <ul class= "features">
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep13")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep14")) %>
+            </li>
+        </ul>
+        <%= sanitize(t("pages.help.sectors.sector5")) %>
+        <ul class= "features">
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep15")) %>
+            </li>
+            <li>
+             <%= sanitize(t("pages.help.sectors.dep16")) %>
+            </li>
+        </ul></p>
+        <button class ="button" id="close-button"><%= sanitize(t("pages.help.sectors.close")) %></button>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $('#popup-link').click(function() {
+          $('#popup').show();
+        });
+        $('#close-button').click(function() {
+          $('#popup').hide();
+        });
+      });
+    </script>
+<!--Pop-up end-->

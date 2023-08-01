@@ -1,0 +1,8 @@
+sq:
+  sdg:
+    goals:
+      title: "Qëllimet për Zhvillim të Qëndrueshëm"
+      filter:
+        heading: "Filtrat sipas QZhQ"
+    related_list_selector:
+      remove_tag: "Hiq"

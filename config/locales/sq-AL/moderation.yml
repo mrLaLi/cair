@@ -1,0 +1,113 @@
+sq:
+  moderation:
+    comments:
+      index:
+        block_authors: Blloko autorët
+        filter: Filtro
+        filters:
+          all: Të gjithë
+          pending_flag_review: Në pritje
+          with_ignored_flag: Shënuar si të shikuara
+        headers:
+          comment: Koment
+          moderate: Modero
+        hide: Fshih komentet
+        ignore_flags: Shëno si të shikuara
+        orders:
+          flags: Më shumë e shënjuar
+          newest: Më të rejat
+        title: Komentet
+    dashboard:
+      index:
+        title: Moderim
+    debates:
+      index:
+        block_authors: Autori i bllokut
+        filter: Filtro
+        filters:
+          all: Të gjithë
+          pending_flag_review: Në pritje
+          with_ignored_flag: Shënuar si të shikuara
+        headers:
+          debate: Debate
+          moderate: Modero
+        hide: Fshih debatet
+        ignore_flags: Shëno si të shikuara
+        orders:
+          created_at: Më të rejat
+          flags: Më shumë e shënjuar
+        title: Debate
+    header:
+      title: Moderim
+    menu:
+      flagged_comments: Komentet
+      flagged_debates: Debate
+      flagged_investments: Investime buxhetore
+      proposals: Propozime
+      proposal_notifications: Njoftimet e propozimeve
+      users: Përdoruesit e bllokuar
+    proposals:
+      index:
+        block_authors: Autori i bllokut
+        filter: Filtro
+        filters:
+          all: Të gjithë
+          pending_flag_review: Në pritje të rishikimit
+          with_ignored_flag: Shëno si të shikuara
+        headers:
+          moderate: Modero
+          proposal: Propozime
+        hide: Fshi propozimet
+        ignore_flags: Shëno si të shikuara
+        orders:
+          created_at: Më të fundit
+          flags: Më shumë e shënjuar
+        title: Propozime
+    budget_investments:
+      index:
+        block_authors: Autori i bllokut
+        filter: Filtro
+        filters:
+          all: Të gjithë
+          pending_flag_review: Në pritje
+          with_ignored_flag: Shënuar si të shikuara
+        headers:
+          moderate: Modero
+          budget_investment: Investim buxhetor
+        hide: Fshih investimet buxhetore
+        ignore_flags: Shëno si të shikuara
+        orders:
+          created_at: Më të fundit
+          flags: Më shumë e shënjuar
+        title: Investime buxhetor
+    proposal_notifications:
+      index:
+        block_authors: Autori i bllokut
+        filter: Filtro
+        filters:
+          all: Të gjithë
+          pending_review: Në pritje të rishikimit
+          ignored: Shëno si të shikuara
+        headers:
+          moderate: Modero
+          proposal_notification: Notifikimi i propozimeve
+        hide: Fshi propozimet
+        ignore_flags: Shëno si të shikuara
+        orders:
+          created_at: Më të fundit
+          moderated: Moderuar
+        title: Notifikimi i propozimeve
+    users:
+      index:
+        hide: Fshih
+        confirm_hide: A jeni të sigurt? Ky veprim do të fshehë përdoruesin "%{name}" pa fshehur përmbajtjen e tij.
+        block: Blloko
+        confirm_block: A jeni të sigurt? Ky veprim do të bllokoj përdoruesin "%{name}" dhe të gjithë
+          përmbajtjen.
+        search_placeholder: email ose emrin e përdoruesit
+        title: Përdoruesit e bllokuar
+      notice_block: Përdoruesi është bllokuar. Të gjitha përmbajtjet e këtij autori 
+        janë fshehur.
+      notice_hide: Përdoruesi është bllokuar. Të gjitha debatet dhe komentet e këtij përdoruesi janë fshehur.
+    actions:
+      confirm_action: A jeni të sigurtë %{action}

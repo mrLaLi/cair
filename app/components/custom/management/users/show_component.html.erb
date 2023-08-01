@@ -1,0 +1,165 @@
+<%= back_link_to management_users_path%>
+ <% if user.verified_at?%>
+    <div data-alert class="callout alert-callout-border success">
+      <%= t("management.document_verifications.already_verified") %>
+    </div>
+  <%end%>
+  <section class="account-info">
+    
+    <% if @user.level_two_or_three_verified? %>
+      <p>
+        <strong>
+          <%= t("management.account_info.identified_label") %>
+        </strong>
+      </p>
+    <% end %>
+
+    <% if @user.username? %>
+      <p>
+        <%= t("management.account_info.username_label") %>
+        <strong><%= @user.username %></strong>
+      </p>
+    <% end %>
+
+    <% if @user.email.present? %>
+      <p>
+        <%= t("management.account_info.email_label") %>
+        <strong><%= @user.email %></strong>
+      </p>
+    <% end %>
+
+    <%if @user.document_type.present?%>
+      <p>
+        <%= t("management.account_info.document_type_label") %>
+        <strong><%= @user.document_type %></strong>
+      </p>
+    <% end %>
+    <%if @user.document_number.present?%>
+      <p>
+        <%= t("management.account_info.document_number_label") %>
+        <strong><%= @user.document_number %></strong>
+      </p>
+    <% end %>
+      <%if @user.image.present?%>
+        <button class= 'float-left button hollow' onclick="showPopup()">Zoom Image</button><br><br><br>
+        <p>
+            <%= image_tag @user.image%>
+        </p>
+      <%end%>
+  </section>
+
+  <%if user.verified_at.nil?%>
+      <div data-alert class="callout success">
+        <%= t("management.document_verifications.please_check_account_data") %>
+      </div>
+        <div class = "float-left">
+          <% unless verified?(user) %>
+            <p><%= button_to t("management.document_verifications.verify"), verify_admin_user_path(user), method: :patch, class: "button success  float-left" %></p>
+          <% end %> 
+        
+        
+          <%= link_to t("users.show.send_rejection_message"),
+                            new_management_user_rejection_message_path(@user),
+                            class: "button alert hollow " %> </p>
+        </div>
+  <%else%>
+  <%= render "management/user_permissions",
+      message: t("management.document_verifications.in_census_has_following_permissions"),
+      permissions: [:debates, :proposal, :support_proposal, :votes] %>
+  <%end%>
+<!--Pop-up start-->
+  
+    <div id="popup" class="popup">
+    <div class="popup-inner">
+    <%if @user.image.present?%>
+        <p>
+          <%= image_tag @user.image, id:'image',width:"500px" %>
+        </p>
+        <button class="left" onclick="rotateLeft()" style='font-size:24px'><i class='fas fa-undo'></i></button>
+        <button class= "right" onclick="rotateRight()" style='font-size:24px'><i class='fas fa-redo'></i></button>
+        <button class="close-btn" onclick="closePopup()" style="font-size:24px"> <i class="fa fa-close"></i></button>
+      </div>
+      </div>
+    <%end%>
+<!--Pop-up style-->
+<style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.7);
+      z-index: 9999;
+    }
+
+    .popup-inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      background-color: #E7F2FC;
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+      max-width: auto;
+      height: auto;
+    }
+    .close-btn{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+    .right{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+    .left{
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      cursor: pointer;
+    }
+    .rotate-buttons {
+      margin-top: 150px;
+    }
+  </style>
+  <!--Pop-up style end-->
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    var currentRotation = 0;
+
+    function showPopup() {
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    function rotateLeft() {
+      currentRotation -= 90;
+      rotateImage();
+    }
+
+    function rotateRight() {
+      currentRotation += 90;
+      rotateImage();
+    }
+
+    function rotateImage() {
+      var image = document.getElementById('image');
+      image.style.transform = 'rotate(' + currentRotation + 'deg)';
+    }
+  </script>
+<!--Pop-up end-->
